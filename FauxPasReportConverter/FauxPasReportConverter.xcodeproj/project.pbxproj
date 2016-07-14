@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49BD65D1499495B08D0E7050 /* libPods-FauxPasReportConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F36E5F818F99DB16C0F19 /* libPods-FauxPasReportConverter.a */; };
+		F06B6D8A1D2B896E00451831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B6D891D2B896E00451831 /* AppDelegate.swift */; };
+		F06B6D8C1D2B896E00451831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B6D8B1D2B896E00451831 /* ViewController.swift */; };
+		F06B6D8E1D2B896E00451831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06B6D8D1D2B896E00451831 /* Assets.xcassets */; };
+		F06B6D911D2B896E00451831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06B6D8F1D2B896E00451831 /* Main.storyboard */; };
+		F06B6D9C1D2B896E00451831 /* FauxPasReportConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B6D9B1D2B896E00451831 /* FauxPasReportConverterTests.swift */; };
+		F06B6DA71D2B896E00451831 /* FauxPasReportConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B6DA61D2B896E00451831 /* FauxPasReportConverterUITests.swift */; };
+		F06B6DB51D2B8F7C00451831 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; };
+		F06B6DB61D2B8F7C00451831 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; };
+		F06B6DB71D2B8F7C00451831 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; };
+		F06B6DBA1D2B902800451831 /* LibXL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B11D2CD33700734490 /* LibXlpage.swift */; };
+		F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */; };
+		F0E500B61D2CDFC500734490 /* StringToPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B51D2CDFC500734490 /* StringToPath.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F06B6D981D2B896E00451831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F06B6D7E1D2B896E00451831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F06B6D851D2B896E00451831;
+			remoteInfo = FauxPasReportConverter;
+		};
+		F06B6DA31D2B896E00451831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F06B6D7E1D2B896E00451831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F06B6D851D2B896E00451831;
+			remoteInfo = FauxPasReportConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F06B6DB91D2B900E00451831 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F06B6DBA1D2B902800451831 /* LibXL.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65CD429154BDB8A975568ED3 /* Pods-FauxPasReportConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FauxPasReportConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter.release.xcconfig"; sourceTree = "<group>"; };
+		86D57EFBEC7805C750B3D22C /* Pods-FauxPasReportConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FauxPasReportConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter.debug.xcconfig"; sourceTree = "<group>"; };
+		AB5F36E5F818F99DB16C0F19 /* libPods-FauxPasReportConverter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FauxPasReportConverter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06B6D861D2B896E00451831 /* FauxPasReportConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FauxPasReportConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06B6D891D2B896E00451831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F06B6D8B1D2B896E00451831 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F06B6D8D1D2B896E00451831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F06B6D901D2B896E00451831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F06B6D921D2B896E00451831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06B6D971D2B896E00451831 /* FauxPasReportConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FauxPasReportConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06B6D9B1D2B896E00451831 /* FauxPasReportConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxPasReportConverterTests.swift; sourceTree = "<group>"; };
+		F06B6D9D1D2B896E00451831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06B6DA21D2B896E00451831 /* FauxPasReportConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FauxPasReportConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06B6DA61D2B896E00451831 /* FauxPasReportConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxPasReportConverterUITests.swift; sourceTree = "<group>"; };
+		F06B6DA81D2B896E00451831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06B6DB41D2B8F7C00451831 /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LibXL.framework; path = FrameWorks/LibXL.framework; sourceTree = "<group>"; };
+		F06B6DBB1D2B914100451831 /* FauxPasReportConverter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverter-Bridging-Header.h"; sourceTree = "<group>"; };
+		F06B6DBC1D2B914100451831 /* FauxPasReportConverterTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverterTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F06B6DBD1D2B914100451831 /* FauxPasReportConverterUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverterUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0E500B11D2CD33700734490 /* LibXlpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibXlpage.swift; path = ExcelSheet/LibXlpage.swift; sourceTree = "<group>"; };
+		F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibxlwriterPage.swift; path = ExcelSheet/LibxlwriterPage.swift; sourceTree = "<group>"; };
+		F0E500B51D2CDFC500734490 /* StringToPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToPath.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F06B6D831D2B896E00451831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B6DB51D2B8F7C00451831 /* LibXL.framework in Frameworks */,
+				49BD65D1499495B08D0E7050 /* libPods-FauxPasReportConverter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B6D941D2B896E00451831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B6DB61D2B8F7C00451831 /* LibXL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B6D9F1D2B896E00451831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B6DB71D2B8F7C00451831 /* LibXL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CBA4A527774D24C7C724B72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86D57EFBEC7805C750B3D22C /* Pods-FauxPasReportConverter.debug.xcconfig */,
+				65CD429154BDB8A975568ED3 /* Pods-FauxPasReportConverter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F06B6D7D1D2B896E00451831 = {
+			isa = PBXGroup;
+			children = (
+				F06B6D881D2B896E00451831 /* FauxPasReportConverter */,
+				F06B6D9A1D2B896E00451831 /* FauxPasReportConverterTests */,
+				F06B6DA51D2B896E00451831 /* FauxPasReportConverterUITests */,
+				F06B6D871D2B896E00451831 /* Products */,
+				2CBA4A527774D24C7C724B72 /* Pods */,
+				FFFF604EA9540E67FE44C11B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F06B6D871D2B896E00451831 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F06B6D861D2B896E00451831 /* FauxPasReportConverter.app */,
+				F06B6D971D2B896E00451831 /* FauxPasReportConverterTests.xctest */,
+				F06B6DA21D2B896E00451831 /* FauxPasReportConverterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F06B6D881D2B896E00451831 /* FauxPasReportConverter */ = {
+			isa = PBXGroup;
+			children = (
+				F0E500B01D2CD2D000734490 /* Excel Sheet */,
+				F06B6D891D2B896E00451831 /* AppDelegate.swift */,
+				F06B6D8B1D2B896E00451831 /* ViewController.swift */,
+				F0E500B51D2CDFC500734490 /* StringToPath.swift */,
+				F06B6D8D1D2B896E00451831 /* Assets.xcassets */,
+				F06B6D8F1D2B896E00451831 /* Main.storyboard */,
+				F06B6D921D2B896E00451831 /* Info.plist */,
+				F06B6DB81D2B8F8300451831 /* FrameWorks */,
+				F06B6DBB1D2B914100451831 /* FauxPasReportConverter-Bridging-Header.h */,
+				F06B6DBC1D2B914100451831 /* FauxPasReportConverterTests-Bridging-Header.h */,
+				F06B6DBD1D2B914100451831 /* FauxPasReportConverterUITests-Bridging-Header.h */,
+			);
+			path = FauxPasReportConverter;
+			sourceTree = "<group>";
+		};
+		F06B6D9A1D2B896E00451831 /* FauxPasReportConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F06B6D9B1D2B896E00451831 /* FauxPasReportConverterTests.swift */,
+				F06B6D9D1D2B896E00451831 /* Info.plist */,
+			);
+			path = FauxPasReportConverterTests;
+			sourceTree = "<group>";
+		};
+		F06B6DA51D2B896E00451831 /* FauxPasReportConverterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F06B6DA61D2B896E00451831 /* FauxPasReportConverterUITests.swift */,
+				F06B6DA81D2B896E00451831 /* Info.plist */,
+			);
+			path = FauxPasReportConverterUITests;
+			sourceTree = "<group>";
+		};
+		F06B6DB81D2B8F8300451831 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				F06B6DB41D2B8F7C00451831 /* LibXL.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		F0E500B01D2CD2D000734490 /* Excel Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				F0E500B11D2CD33700734490 /* LibXlpage.swift */,
+				F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */,
+			);
+			name = "Excel Sheet";
+			sourceTree = "<group>";
+		};
+		FFFF604EA9540E67FE44C11B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F36E5F818F99DB16C0F19 /* libPods-FauxPasReportConverter.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F06B6D851D2B896E00451831 /* FauxPasReportConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06B6DAB1D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverter" */;
+			buildPhases = (
+				AE9DD00D303DB4EBA6C3E9E0 /* [CP] Check Pods Manifest.lock */,
+				F06B6D821D2B896E00451831 /* Sources */,
+				F06B6D831D2B896E00451831 /* Frameworks */,
+				F06B6D841D2B896E00451831 /* Resources */,
+				F06B6DB91D2B900E00451831 /* CopyFiles */,
+				7F1E7EAA709957F8ABD5412D /* [CP] Embed Pods Frameworks */,
+				4502C6FAC78FD719B81886F9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FauxPasReportConverter;
+			productName = FauxPasReportConverter;
+			productReference = F06B6D861D2B896E00451831 /* FauxPasReportConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F06B6D961D2B896E00451831 /* FauxPasReportConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06B6DAE1D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverterTests" */;
+			buildPhases = (
+				A2735E426BD8DB4B67741E9F /* [CP] Check Pods Manifest.lock */,
+				F06B6D931D2B896E00451831 /* Sources */,
+				F06B6D941D2B896E00451831 /* Frameworks */,
+				F06B6D951D2B896E00451831 /* Resources */,
+				726430D1DF131F159836C481 /* [CP] Embed Pods Frameworks */,
+				84CC9E8442D9F6AA0A7EBDC6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F06B6D991D2B896E00451831 /* PBXTargetDependency */,
+			);
+			name = FauxPasReportConverterTests;
+			productName = FauxPasReportConverterTests;
+			productReference = F06B6D971D2B896E00451831 /* FauxPasReportConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F06B6DA11D2B896E00451831 /* FauxPasReportConverterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06B6DB11D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverterUITests" */;
+			buildPhases = (
+				3BF148F38EFDBAFC130D5AA3 /* [CP] Check Pods Manifest.lock */,
+				F06B6D9E1D2B896E00451831 /* Sources */,
+				F06B6D9F1D2B896E00451831 /* Frameworks */,
+				F06B6DA01D2B896E00451831 /* Resources */,
+				CFDB023960D2790A4B037EE9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F06B6DA41D2B896E00451831 /* PBXTargetDependency */,
+			);
+			name = FauxPasReportConverterUITests;
+			productName = FauxPasReportConverterUITests;
+			productReference = F06B6DA21D2B896E00451831 /* FauxPasReportConverterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F06B6D7E1D2B896E00451831 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Eugene Zorin";
+				TargetAttributes = {
+					F06B6D851D2B896E00451831 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F06B6D961D2B896E00451831 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F06B6D851D2B896E00451831;
+					};
+					F06B6DA11D2B896E00451831 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F06B6D851D2B896E00451831;
+					};
+				};
+			};
+			buildConfigurationList = F06B6D811D2B896E00451831 /* Build configuration list for PBXProject "FauxPasReportConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F06B6D7D1D2B896E00451831;
+			productRefGroup = F06B6D871D2B896E00451831 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F06B6D851D2B896E00451831 /* FauxPasReportConverter */,
+				F06B6D961D2B896E00451831 /* FauxPasReportConverterTests */,
+				F06B6DA11D2B896E00451831 /* FauxPasReportConverterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F06B6D841D2B896E00451831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B6D8E1D2B896E00451831 /* Assets.xcassets in Resources */,
+				F06B6D911D2B896E00451831 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B6D951D2B896E00451831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B6DA01D2B896E00451831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BF148F38EFDBAFC130D5AA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4502C6FAC78FD719B81886F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		726430D1DF131F159836C481 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterTests/Pods-FauxPasReportConverterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F1E7EAA709957F8ABD5412D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84CC9E8442D9F6AA0A7EBDC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterTests/Pods-FauxPasReportConverterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2735E426BD8DB4B67741E9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE9DD00D303DB4EBA6C3E9E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFDB023960D2790A4B037EE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterUITests/Pods-FauxPasReportConverterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F06B6D821D2B896E00451831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */,
+				F0E500B61D2CDFC500734490 /* StringToPath.swift in Sources */,
+				F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */,
+				F06B6D8C1D2B896E00451831 /* ViewController.swift in Sources */,
+				F06B6D8A1D2B896E00451831 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B6D931D2B896E00451831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B6D9C1D2B896E00451831 /* FauxPasReportConverterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B6D9E1D2B896E00451831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B6DA71D2B896E00451831 /* FauxPasReportConverterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F06B6D991D2B896E00451831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F06B6D851D2B896E00451831 /* FauxPasReportConverter */;
+			targetProxy = F06B6D981D2B896E00451831 /* PBXContainerItemProxy */;
+		};
+		F06B6DA41D2B896E00451831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F06B6D851D2B896E00451831 /* FauxPasReportConverter */;
+			targetProxy = F06B6DA31D2B896E00451831 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F06B6D8F1D2B896E00451831 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F06B6D901D2B896E00451831 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F06B6DA91D2B896E00451831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F06B6DAA1D2B896E00451831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F06B6DAC1D2B896E00451831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86D57EFBEC7805C750B3D22C /* Pods-FauxPasReportConverter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
+				INFOPLIST_FILE = FauxPasReportConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"${PODS_ROOT}/Headers/Public\"/**";
+			};
+			name = Debug;
+		};
+		F06B6DAD1D2B896E00451831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65CD429154BDB8A975568ED3 /* Pods-FauxPasReportConverter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
+				INFOPLIST_FILE = FauxPasReportConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverter-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"${PODS_ROOT}/Headers/Public\"/**";
+			};
+			name = Release;
+		};
+		F06B6DAF1D2B896E00451831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
+				);
+				INFOPLIST_FILE = FauxPasReportConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FauxPasReportConverter.app/Contents/MacOS/FauxPasReportConverter";
+			};
+			name = Debug;
+		};
+		F06B6DB01D2B896E00451831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
+				);
+				INFOPLIST_FILE = FauxPasReportConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FauxPasReportConverter.app/Contents/MacOS/FauxPasReportConverter";
+			};
+			name = Release;
+		};
+		F06B6DB21D2B896E00451831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
+				);
+				INFOPLIST_FILE = FauxPasReportConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = FauxPasReportConverter;
+			};
+			name = Debug;
+		};
+		F06B6DB31D2B896E00451831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
+				);
+				INFOPLIST_FILE = FauxPasReportConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterUITests-Bridging-Header.h";
+				TEST_TARGET_NAME = FauxPasReportConverter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F06B6D811D2B896E00451831 /* Build configuration list for PBXProject "FauxPasReportConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B6DA91D2B896E00451831 /* Debug */,
+				F06B6DAA1D2B896E00451831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06B6DAB1D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B6DAC1D2B896E00451831 /* Debug */,
+				F06B6DAD1D2B896E00451831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06B6DAE1D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B6DAF1D2B896E00451831 /* Debug */,
+				F06B6DB01D2B896E00451831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06B6DB11D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B6DB21D2B896E00451831 /* Debug */,
+				F06B6DB31D2B896E00451831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F06B6D7E1D2B896E00451831 /* Project object */;
+}
