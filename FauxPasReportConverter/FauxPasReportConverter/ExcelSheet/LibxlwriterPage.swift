@@ -10,7 +10,7 @@ import Foundation
 
 
 
-public class Libxlwriter: NSObject {
+open class Libxlwriter: NSObject {
     
     let kFileExtension = "xlsx"
     
@@ -30,13 +30,13 @@ public class Libxlwriter: NSObject {
     internal var outputFilePath : String
     {
         get{
-            let documentsFolderPath : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+            let documentsFolderPath : String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
             let filePath : String = documentsFolderPath.stringByAppendingPathComponent(self.outputFileName).stringByAppendingPathExtension(kFileExtension)!
             
             return filePath}
     }
     
-    public func createXlSheet() -> Void {
+    open func createXlSheet() -> Void {
         let workbook = new_workbook((outputFilePath as NSString).fileSystemRepresentation)
         
         // Add a worksheet with a user defined sheet name.
@@ -78,8 +78,8 @@ public class Libxlwriter: NSObject {
         // Close the workbook, save the file and free any memory
         workbook_close(workbook)
         
-        let urlPath = [NSURL(fileURLWithPath: outputFilePath)]
-        NSWorkspace.sharedWorkspace().activateFileViewerSelectingURLs(urlPath)
+        let urlPath = [URL(fileURLWithPath: outputFilePath)]
+        NSWorkspace.shared().activateFileViewerSelecting(urlPath)
         
         outputFileName.runCommand(String(format: "%@ %@","open", outputFilePath))
     }

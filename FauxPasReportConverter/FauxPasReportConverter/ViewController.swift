@@ -17,19 +17,19 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
     }
 
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
     
-    @IBAction func createExelSheet(sender : AnyObject) -> Void {
+    @IBAction func createExelSheet(_ sender : AnyObject) -> Void {
         
         let libXl = LibXl.init()
         libXl.createXlSheet()
     }
     
-    @IBAction func createXLSheet(sender : AnyObject) -> Void {
+    @IBAction func createXLSheet(_ sender : AnyObject) -> Void {
         let libxlwriterSheet = Libxlwriter.init()
         libxlwriterSheet.createXlSheet()
     }

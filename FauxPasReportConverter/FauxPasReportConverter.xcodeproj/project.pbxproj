@@ -276,13 +276,16 @@
 				TargetAttributes = {
 					F06B6D851D2B896E00451831 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					F06B6D961D2B896E00451831 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = F06B6D851D2B896E00451831;
 					};
 					F06B6DA11D2B896E00451831 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = F06B6D851D2B896E00451831;
 					};
 				};
@@ -622,6 +625,7 @@
 				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/**";
 				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverter-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) \"${PODS_ROOT}/Headers/Public\"/**";
 			};
 			name = Debug;
@@ -652,6 +656,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/**";
 				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverter-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) \"${PODS_ROOT}/Headers/Public\"/**";
 			};
 			name = Release;
@@ -672,6 +677,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FauxPasReportConverter.app/Contents/MacOS/FauxPasReportConverter";
 			};
 			name = Debug;
@@ -691,6 +697,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FauxPasReportConverter.app/Contents/MacOS/FauxPasReportConverter";
 			};
 			name = Release;
@@ -710,6 +717,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterUITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FauxPasReportConverter;
 			};
 			name = Debug;
@@ -728,6 +736,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterUITests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FauxPasReportConverter;
 			};
 			name = Release;

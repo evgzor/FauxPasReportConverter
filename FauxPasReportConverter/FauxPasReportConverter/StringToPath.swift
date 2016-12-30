@@ -28,14 +28,14 @@ extension String {
         
         get {
             
-            return (self as NSString).stringByDeletingLastPathComponent
+            return (self as NSString).deletingLastPathComponent
         }
     }
     var stringByDeletingPathExtension: String {
         
         get {
             
-            return (self as NSString).stringByDeletingPathExtension
+            return (self as NSString).deletingPathExtension
         }
     }
     var pathComponents: [String] {
@@ -46,28 +46,28 @@ extension String {
         }
     }
     
-    func stringByAppendingPathComponent(path: String) -> String {
+    func stringByAppendingPathComponent(_ path: String) -> String {
         
         let nsSt = self as NSString
         
-        return nsSt.stringByAppendingPathComponent(path)
+        return nsSt.appendingPathComponent(path)
     }
     
-    func stringByAppendingPathExtension(ext: String) -> String? {
+    func stringByAppendingPathExtension(_ ext: String) -> String? {
         
         let nsSt = self as NSString  
         
-        return nsSt.stringByAppendingPathExtension(ext)  
+        return nsSt.appendingPathExtension(ext)  
     }
     
-    func runCommand (commandToRun : String) -> String
+    func runCommand (_ commandToRun : String) -> String
     {
-        let task = NSTask.init()
+        let task = Process.init()
         task.launchPath = "/bin/sh"
     
         let arguments : Array = ["-c" ,String(format :"%@", commandToRun)]
         task.arguments = arguments
-        let pipe = NSPipe()
+        let pipe = Pipe()
         task.standardOutput = pipe
         
         let file = pipe.fileHandleForReading
@@ -76,7 +76,7 @@ extension String {
     
         let data = file.readDataToEndOfFile
     
-        let output = String.init(data: data(), encoding: NSUTF8StringEncoding)
+        let output = String.init(data: data(), encoding: String.Encoding.utf8)
         
     return output!
     }

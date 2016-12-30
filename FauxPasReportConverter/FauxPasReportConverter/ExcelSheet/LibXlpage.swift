@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import Darwin
 
-public class LibXl: NSObject {
+open class LibXl: NSObject {
     override init() {
         super.init()
     }
     
-    private var exelFormat : NSMatrix?
+    fileprivate var exelFormat : NSMatrix?
     
-    public func createXlSheet() -> Void {
+    open func createXlSheet() -> Void {
         let xlsMode : Bool = (exelFormat?.selectedCell()?.tag) != 0
         
         let book :  BookHandle = xlsMode ? xlCreateBookCA() : xlCreateXMLBookCA()
@@ -62,7 +63,7 @@ public class LibXl: NSObject {
         xlFormatSetAlignHA(signatureFormat, Int32(ALIGNH_CENTER.rawValue));
         xlFormatSetBorderTopA(signatureFormat, Int32(BORDERSTYLE_THIN.rawValue));
         
-        let sheet : SheetHandle = xlBookAddSheetA(book, "Invoice", nil)
+        let sheet : SheetHandle? = xlBookAddSheetA(book, "Invoice", nil)
         if sheet != nil {
             
             xlSheetWriteStrA(sheet, 2, 1, "Invoice No. 3568", titleFormat)
@@ -90,15 +91,17 @@ public class LibXl: NSObject {
         }
         
         let name : String = xlsMode ? "invoice.xls" : "invoice.xlsx"
-        let documentPath : String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let documentPath : String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         //NSSearchPathForDirectoriesInDomains(DocumentDirectory,UserDomainMask, YES) objectAtIndex:0];
-        let filename = documentPath.stringByAppendingString(name);
+        let filename = documentPath + name;
         
-        xlBookSaveA(book, UnsafePointer((filename.dataUsingEncoding(NSUTF8StringEncoding)?.bytes)!));
+      xlBookSaveA(book, (filename.data(using: .utf8)! as Data).withUnsafeBytes {(bytes: UnsafePointer<Int8>)->Void in
+        bytes.assumingMemoryBound(to: Int8.self)
+        })  //bytes.assumingMemoryBound(to: Int8.self))
         
-        xlBookReleaseA(book);
+        xlBookReleaseA(book)
         
-        NSWorkspace.sharedWorkspace().openFile(filename)
+        NSWorkspace.shared().openFile(filename)
 
     }
 }
