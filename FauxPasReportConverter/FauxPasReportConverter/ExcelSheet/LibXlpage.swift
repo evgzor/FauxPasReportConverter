@@ -93,13 +93,13 @@ open class LibXl: NSObject {
         let name : String = xlsMode ? "invoice.xls" : "invoice.xlsx"
         let documentPath : String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         //NSSearchPathForDirectoriesInDomains(DocumentDirectory,UserDomainMask, YES) objectAtIndex:0];
-        let filename = documentPath + name;
-        
-      xlBookSaveA(book, (filename.data(using: .utf8)! as Data).withUnsafeBytes {(bytes: UnsafePointer<Int8>)->Void in
-        bytes.assumingMemoryBound(to: Int8.self)
-        })  //bytes.assumingMemoryBound(to: Int8.self))
-        
-        xlBookReleaseA(book)
+        let filename = documentPath + "/" + name;
+      
+        xlBookSaveA(book, (filename.data(using: .utf8)! as Data).withUnsafeBytes {(bytes: UnsafePointer<Int8>)->UnsafePointer<Int8> in
+          return bytes
+      })
+      
+        xlBookReleaseA(book);
         
         NSWorkspace.shared().openFile(filename)
 
