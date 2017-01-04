@@ -22,7 +22,29 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-    
+  
+    @IBAction func openFile (_ sender : AnyObject) -> Void {
+      let dialog = NSOpenPanel();
+      
+      dialog.title                   = "Choose a .txt file";
+      dialog.showsResizeIndicator    = true;
+      dialog.showsHiddenFiles        = false;
+      dialog.canChooseDirectories    = true;
+      dialog.canCreateDirectories    = true;
+      dialog.allowsMultipleSelection = false;
+      dialog.allowedFileTypes        = ["txt"];
+      
+      if (dialog.runModal() == NSModalResponseOK) {
+        let result = dialog.url // Pathname of the file
+        
+        if (result != nil) {
+          let path = result!.path
+        }
+      } else {
+        // User clicked on "Cancel"
+        return
+      }
+  }
     @IBAction func createExelSheet(_ sender : AnyObject) -> Void {
         
         let libXl = LibXl.init()

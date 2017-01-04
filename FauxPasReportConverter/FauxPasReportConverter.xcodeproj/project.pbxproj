@@ -18,6 +18,24 @@
 		F06B6DB61D2B8F7C00451831 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; };
 		F06B6DB71D2B8F7C00451831 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; };
 		F06B6DBA1D2B902800451831 /* LibXL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F09FA4CC1E1C318F008D3B19 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */; };
+		F09FA4CD1E1C318F008D3B19 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */; };
+		F09FA4CE1E1C318F008D3B19 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */; };
+		F09FA4CF1E1C318F008D3B19 /* EndClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C71E1C318F008D3B19 /* EndClass.swift */; };
+		F09FA4D01E1C318F008D3B19 /* EndClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C71E1C318F008D3B19 /* EndClass.swift */; };
+		F09FA4D11E1C318F008D3B19 /* EndClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C71E1C318F008D3B19 /* EndClass.swift */; };
+		F09FA4D21E1C318F008D3B19 /* Extent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C81E1C318F008D3B19 /* Extent.swift */; };
+		F09FA4D31E1C318F008D3B19 /* Extent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C81E1C318F008D3B19 /* Extent.swift */; };
+		F09FA4D41E1C318F008D3B19 /* Extent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C81E1C318F008D3B19 /* Extent.swift */; };
+		F09FA4D51E1C318F008D3B19 /* Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C91E1C318F008D3B19 /* Html.swift */; };
+		F09FA4D61E1C318F008D3B19 /* Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C91E1C318F008D3B19 /* Html.swift */; };
+		F09FA4D71E1C318F008D3B19 /* Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C91E1C318F008D3B19 /* Html.swift */; };
+		F09FA4D81E1C318F008D3B19 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */; };
+		F09FA4D91E1C318F008D3B19 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */; };
+		F09FA4DA1E1C318F008D3B19 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */; };
+		F09FA4DB1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
+		F09FA4DC1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
+		F09FA4DD1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
 		F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B11D2CD33700734490 /* LibXlpage.swift */; };
 		F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */; };
 		F0E500B61D2CDFC500734490 /* StringToPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B51D2CDFC500734490 /* StringToPath.swift */; };
@@ -73,6 +91,12 @@
 		F06B6DBB1D2B914100451831 /* FauxPasReportConverter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverter-Bridging-Header.h"; sourceTree = "<group>"; };
 		F06B6DBC1D2B914100451831 /* FauxPasReportConverterTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverterTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F06B6DBD1D2B914100451831 /* FauxPasReportConverterUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverterUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diagnostics.swift; sourceTree = "<group>"; };
+		F09FA4C71E1C318F008D3B19 /* EndClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndClass.swift; sourceTree = "<group>"; };
+		F09FA4C81E1C318F008D3B19 /* Extent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extent.swift; sourceTree = "<group>"; };
+		F09FA4C91E1C318F008D3B19 /* Html.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Html.swift; sourceTree = "<group>"; };
+		F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
+		F09FA4CB1E1C318F008D3B19 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
 		F0E500B11D2CD33700734490 /* LibXlpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibXlpage.swift; path = ExcelSheet/LibXlpage.swift; sourceTree = "<group>"; };
 		F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibxlwriterPage.swift; path = ExcelSheet/LibxlwriterPage.swift; sourceTree = "<group>"; };
 		F0E500B51D2CDFC500734490 /* StringToPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToPath.swift; sourceTree = "<group>"; };
@@ -141,6 +165,7 @@
 		F06B6D881D2B896E00451831 /* FauxPasReportConverter */ = {
 			isa = PBXGroup;
 			children = (
+				F09FA4C51E1C318F008D3B19 /* ReportModel */,
 				F0E500B01D2CD2D000734490 /* Excel Sheet */,
 				F06B6D891D2B896E00451831 /* AppDelegate.swift */,
 				F06B6D8B1D2B896E00451831 /* ViewController.swift */,
@@ -182,6 +207,20 @@
 			name = FrameWorks;
 			sourceTree = "<group>";
 		};
+		F09FA4C51E1C318F008D3B19 /* ReportModel */ = {
+			isa = PBXGroup;
+			children = (
+				F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */,
+				F09FA4C71E1C318F008D3B19 /* EndClass.swift */,
+				F09FA4C81E1C318F008D3B19 /* Extent.swift */,
+				F09FA4C91E1C318F008D3B19 /* Html.swift */,
+				F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */,
+				F09FA4CB1E1C318F008D3B19 /* Start.swift */,
+			);
+			name = ReportModel;
+			path = fauxpasreportconverter/ReportModel;
+			sourceTree = SOURCE_ROOT;
+		};
 		F0E500B01D2CD2D000734490 /* Excel Sheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +252,7 @@
 				F06B6DB91D2B900E00451831 /* CopyFiles */,
 				7F1E7EAA709957F8ABD5412D /* [CP] Embed Pods Frameworks */,
 				4502C6FAC78FD719B81886F9 /* [CP] Copy Pods Resources */,
+				F0E2CA7D1E1A72F0009B9943 /* Tailor */,
 			);
 			buildRules = (
 			);
@@ -271,7 +311,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Eugene Zorin";
 				TargetAttributes = {
 					F06B6D851D2B896E00451831 = {
@@ -457,6 +497,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterUITests/Pods-FauxPasReportConverterUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F0E2CA7D1E1A72F0009B9943 /* Tailor */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Tailor;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if hash tailor 2>/dev/null; then\ntailor\nelse\necho \"warning: Please install Tailor from https://tailor.sh\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -465,10 +519,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */,
+				F09FA4DB1E1C318F008D3B19 /* Start.swift in Sources */,
+				F09FA4CF1E1C318F008D3B19 /* EndClass.swift in Sources */,
 				F0E500B61D2CDFC500734490 /* StringToPath.swift in Sources */,
 				F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */,
 				F06B6D8C1D2B896E00451831 /* ViewController.swift in Sources */,
+				F09FA4CC1E1C318F008D3B19 /* Diagnostics.swift in Sources */,
+				F09FA4D51E1C318F008D3B19 /* Html.swift in Sources */,
+				F09FA4D81E1C318F008D3B19 /* ReportModel.swift in Sources */,
 				F06B6D8A1D2B896E00451831 /* AppDelegate.swift in Sources */,
+				F09FA4D21E1C318F008D3B19 /* Extent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +536,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09FA4D61E1C318F008D3B19 /* Html.swift in Sources */,
+				F09FA4CD1E1C318F008D3B19 /* Diagnostics.swift in Sources */,
+				F09FA4DC1E1C318F008D3B19 /* Start.swift in Sources */,
+				F09FA4D01E1C318F008D3B19 /* EndClass.swift in Sources */,
+				F09FA4D91E1C318F008D3B19 /* ReportModel.swift in Sources */,
 				F06B6D9C1D2B896E00451831 /* FauxPasReportConverterTests.swift in Sources */,
+				F09FA4D31E1C318F008D3B19 /* Extent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +550,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09FA4D71E1C318F008D3B19 /* Html.swift in Sources */,
+				F09FA4CE1E1C318F008D3B19 /* Diagnostics.swift in Sources */,
+				F09FA4DD1E1C318F008D3B19 /* Start.swift in Sources */,
+				F09FA4D11E1C318F008D3B19 /* EndClass.swift in Sources */,
+				F09FA4DA1E1C318F008D3B19 /* ReportModel.swift in Sources */,
 				F06B6DA71D2B896E00451831 /* FauxPasReportConverterUITests.swift in Sources */,
+				F09FA4D41E1C318F008D3B19 /* Extent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,8 +601,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -574,8 +648,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -594,6 +670,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};

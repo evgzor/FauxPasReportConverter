@@ -81,6 +81,8 @@ open class Libxlwriter: NSObject {
         let urlPath = [URL(fileURLWithPath: outputFilePath)]
         NSWorkspace.shared().activateFileViewerSelecting(urlPath)
         
-        outputFileName.runCommand(String(format: "%@ %@","open", outputFilePath))
+      if outputFileName.runCommand(String(format: "%@ %@","open", outputFilePath)).lengthOfBytes(using: .utf8) > 0 {
+        
+      }
     }
 }
