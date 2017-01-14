@@ -26,7 +26,7 @@ let reportModelProjectName = "projectName"
 let reportModelTargetBundleVersion = "targetBundleVersion"
 let reportModelDiagnostics = "diagnostics"
 
-class ReportModel: NSObject, NSCoding, NSCopying {
+public class ReportModel: NSObject, NSCoding, NSCopying {
   var buildConfigurationName: String?
   var fauxPasVersion: String?
   var versionControlRevision: String?
@@ -68,11 +68,9 @@ class ReportModel: NSObject, NSCoding, NSCopying {
             parsedDiagnostics.append(Diagnostics.modelObject(withDictionary: itemDic))
           }
         }
-      }
-      else if let receivedDiagnostics = dict[reportModelDiagnostics] as? [AnyHashable: Any] {
+      } else if let receivedDiagnostics = dict[reportModelDiagnostics] as? [AnyHashable: Any] {
         parsedDiagnostics.append(Diagnostics.modelObject(withDictionary: receivedDiagnostics))
       }
-    
       self.diagnostics = (arrayLiteral: parsedDiagnostics) as [AnyObject]
   }
 
@@ -93,8 +91,7 @@ class ReportModel: NSObject, NSCoding, NSCopying {
       if subArrayObject.responds(to: #selector(self.dictionaryRepresentation)) {
         // This class is a model object
         tempArrayForDiagnostics.append(subArrayObject.perform(#selector(self.dictionaryRepresentation)))
-      }
-      else {
+      } else {
         // Generic object
         tempArrayForDiagnostics.append(subArrayObject)
       }
@@ -104,7 +101,7 @@ class ReportModel: NSObject, NSCoding, NSCopying {
   }
 
   // MARK: - NSCoding Methods
-  required init?(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     super.init()
     self.buildConfigurationName = aDecoder.decodeObject(forKey: reportModelBuildConfigurationName) as? String
     self.fauxPasVersion = aDecoder.decodeObject(forKey: reportModelFauxPasVersion) as? String
@@ -116,10 +113,10 @@ class ReportModel: NSObject, NSCoding, NSCopying {
     self.versionControlSystemName = aDecoder.decodeObject(forKey: reportModelVersionControlSystemName) as? String
     self.projectName = aDecoder.decodeObject(forKey: reportModelProjectName) as? String
     self.targetBundleVersion = aDecoder.decodeObject(forKey: reportModelTargetBundleVersion) as? String
-    self.diagnostics = aDecoder.decodeObject(forKey: reportModelDiagnostics) as! [AnyObject]
+    self.diagnostics = aDecoder.decodeObject(forKey: reportModelDiagnostics) as? [AnyObject] ?? [AnyObject]()
   }
 
-  func encode(with aCoder: NSCoder) {
+  public func encode(with aCoder: NSCoder) {
     aCoder.encode(buildConfigurationName, forKey: reportModelBuildConfigurationName)
     aCoder.encode(fauxPasVersion, forKey: reportModelFauxPasVersion)
     aCoder.encode(versionControlRevision, forKey: reportModelVersionControlRevision)

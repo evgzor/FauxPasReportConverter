@@ -1,623 +1,2797 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		060F330DBAE920F85254267120DAC56A /* custom.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EF632D028F7F6EC3B0D9077D68B730F /* custom.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		0A689BD46BADDC34F705C50C7CCB1DB1 /* worksheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE7D7113D0FF879A761D30502702BB3 /* worksheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		161617703A5B376CD0B93046BF9E0EAB /* custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 9212E44E978427EB983EC2D9F2927ACC /* custom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27DC8409035E5E88441DA86549FA2F6B /* libxlsxwriter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B3ED5F14710115D62389B45B7DEA28 /* libxlsxwriter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29F2643B9D770D6E2D8A5395D4E5EEC5 /* drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D5589695BF7A52E16E7DCF86BB1C9B /* drawing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F70E88AE5C6453EA8E2ED8745FD72A7 /* relationships.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C1EED9AE5951E43AE5D96DB2D877F3 /* relationships.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		441B2C44AC677746DF0534C4B53BC9BA /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = F5702E3851BF6DC73A1E411C50AE67EC /* format.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56C5A24A4BFBA24E563DE4F1A68DB6A4 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = F4794A036DE313204D3B20D3A440C08B /* queue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		591629DE3CDD99F4DFA44BAB6C6787FA /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 389685F1423EE4DB740D43B5E5895200 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		5BE295924753A3917E799E7C47C10EDF /* hash_table.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C627C9E4F9A639CA4D3E0EC04ADBEA /* hash_table.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C2E27556A1CD9C018A60631A4E1F52A /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = D80D911779AB50F2893D99EBD8BDF2E0 /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D42ED4E8BACC0408CF4EFE4F1C62B99 /* packager.h in Headers */ = {isa = PBXBuildFile; fileRef = 178F455047388D3EB33DF331DD756B9F /* packager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		659245501CFF412AF84B7B3EB97A4559 /* theme.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A4366E143A1B3ED723BE3D45955F4 /* theme.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		6674202C764103F18D233FBB619CE54C /* hash_table.c in Sources */ = {isa = PBXBuildFile; fileRef = BD4AC35FF2B161983A65A9FEDAD4CBD4 /* hash_table.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		6BB6DBA62A8B848D95DD411C47B1A107 /* app.h in Headers */ = {isa = PBXBuildFile; fileRef = C375A326F70ABDF9937E162D1EE40CC6 /* app.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C4F79F8A836DD0BDA90804E13B13336 /* theme.h in Headers */ = {isa = PBXBuildFile; fileRef = BF01C4B82CF891D13C80E767ED4BD1B4 /* theme.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		767716EBCC06101E9C5DF5F980CBABA3 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 647E33E2707FC109BFEDDBDA792B1770 /* core.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		79D00E81446A3B6ABD46D2E885EA291E /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 242D2026CEBDBB7D2758B74A71D2BB49 /* common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D879F3F9452D9806A5DE656BFD515C7 /* drawing.c in Sources */ = {isa = PBXBuildFile; fileRef = 159975DFC0FDFC25847385653DDA59BD /* drawing.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		7DF6358FE2D745B6F75F49FF6DC29DDD /* shared_strings.h in Headers */ = {isa = PBXBuildFile; fileRef = B280229EC42D6A7A5FD027DC63DCCC0A /* shared_strings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		810C71A2DB3ED6E60534026D54A34CF1 /* workbook.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7B61E01243080308D7954B32ECE144 /* workbook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		851FB61D371F99D3BBB4F3E8E430CD79 /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = AB8ACDB49949ED73CC941B1718A7B70A /* utility.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		8541AA22F91C5B34A8BFCBA4F040497D /* xmlwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 918E43C2C7A08E8C60F4BBDE25596EBF /* xmlwriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8558E2CF009E1C458021472E5025A363 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B60A85C8F25C694D22C14382E66F9B1 /* zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87D2974B01C442BCC3E149C6E49ED6E9 /* worksheet.c in Sources */ = {isa = PBXBuildFile; fileRef = AF8B2C4A265613073967FB7898142605 /* worksheet.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		8CFF539BE0F4186D061B6017D4F25D7C /* xlsxwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4138669CD9BD5B8078145E80A5F3CF2F /* xlsxwriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9885A47F3A66DB4FF2E6939A2EA254C2 /* chart.h in Headers */ = {isa = PBXBuildFile; fileRef = 907D7CB72686B103F75EB5653A059B7C /* chart.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B3D1974E7F6591FDF29E0BA85B91A2B /* format.c in Sources */ = {isa = PBXBuildFile; fileRef = A112BCFE83C7F6D69B9FF2FB91F84397 /* format.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		9ED8488B532A2733872A8F300C106201 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		9F3153D1AD2CB1832DC7FBFE04AE6CD8 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 7748AD817F6CEF5055BFFCCCB1CCA512 /* zip.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		A20E65EC1EE7FF6A646AB7DA6B43E3E0 /* relationships.c in Sources */ = {isa = PBXBuildFile; fileRef = CC22EF23B4C4E2E5F01C60C240BD86CF /* relationships.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		AC10912710DC0C3C645AE83DB5C4FB1A /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = A23CE8EC6F25A7A6B3C3768BCD8B8D64 /* utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B169F853AA2ECAE7A8D861AE20E9F577 /* chart.c in Sources */ = {isa = PBXBuildFile; fileRef = D827E87624D0111099034A854CD3CADE /* chart.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		B36B4815A8F7FAE8D358C8589B9DDC77 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEAD5B838558EFF650A4170A6A986C3 /* tree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB7D1F91B955D28B80C007D325888ED4 /* packager.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC07C7B109B23359BC106365D6F8B2 /* packager.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		C2D1D6AA6687E6AA5303FBA4E3CDD162 /* libxlsxwriter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DECD47031093BB003DFDF7131DF19F1D /* libxlsxwriter-dummy.m */; };
-		C58ECE6B325B531AFB9F81DDA389F5BF /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = EBC73555115085DDC49519E004610CD5 /* app.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		C754B446398C1C38E2E60313C6643CB5 /* content_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F83CC60916C48B47BC3CE648A6EEEAA /* content_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF7B0540A39DF5BFCA2B9707C1B0B5C6 /* styles.c in Sources */ = {isa = PBXBuildFile; fileRef = A8C0666997C618D88667EE81636699B4 /* styles.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		D9D18DA447CA7658B2370936BEAB4B73 /* Pods-FauxPasReportConverter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E913F2ABEADF9387592FE6F8FACD184 /* Pods-FauxPasReportConverter-dummy.m */; };
-		DD382C49649D69827D60305BA17CBE3F /* workbook.c in Sources */ = {isa = PBXBuildFile; fileRef = F61ED00223F2CEFA004A9E8E118277F4 /* workbook.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		DD4A973F0E520DFFBE7EAFA39ACF4CCC /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DE20A8A007E413B55DB82F6A0CE141 /* ioapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E02CDCFF2A49415A8F72B6D26A576AD3 /* content_types.c in Sources */ = {isa = PBXBuildFile; fileRef = 909DBF457C43A36043005BB365BE57A1 /* content_types.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		E69BFCFDB880E1D7CC1A8243B6744EB3 /* shared_strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 250E23366A64672C5C9DF96C74F9D774 /* shared_strings.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		EEE5AD5E18E0AF1DE65049A2C1645F71 /* styles.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC9C39B6D72C82E09FF6D7303BEA1BD /* styles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3D83EFF64E66969C62DF5B0419097B5 /* xmlwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2CD26F4E9B43C02E86C32E8438B16 /* xmlwriter.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		F4AF2A66C9741697A20064F143DC04D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D1FA5F4D0549857D6337A63D96913767 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 535DCBFA6C25405D54AE2B9EEADB8BD3;
-			remoteInfo = libxlsxwriter;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		159975DFC0FDFC25847385653DDA59BD /* drawing.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = drawing.c; path = src/drawing.c; sourceTree = "<group>"; };
-		178F455047388D3EB33DF331DD756B9F /* packager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = packager.h; path = include/xlsxwriter/packager.h; sourceTree = "<group>"; };
-		1C43E8289F32C25276BEFD8438AC34B9 /* Pods-FauxPasReportConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FauxPasReportConverter.release.xcconfig"; sourceTree = "<group>"; };
-		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		20E34C625A023AD6E0E67C138EE76C35 /* libPods-FauxPasReportConverter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FauxPasReportConverter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		242D2026CEBDBB7D2758B74A71D2BB49 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = common.h; path = include/xlsxwriter/common.h; sourceTree = "<group>"; };
-		250E23366A64672C5C9DF96C74F9D774 /* shared_strings.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = shared_strings.c; path = src/shared_strings.c; sourceTree = "<group>"; };
-		30DE20A8A007E413B55DB82F6A0CE141 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = include/xlsxwriter/third_party/minizip/ioapi.h; sourceTree = "<group>"; };
-		389685F1423EE4DB740D43B5E5895200 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = third_party/minizip/ioapi.c; sourceTree = "<group>"; };
-		3B60A85C8F25C694D22C14382E66F9B1 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = include/xlsxwriter/third_party/minizip/zip.h; sourceTree = "<group>"; };
-		3B7B61E01243080308D7954B32ECE144 /* workbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = workbook.h; path = include/xlsxwriter/workbook.h; sourceTree = "<group>"; };
-		3BEAD5B838558EFF650A4170A6A986C3 /* tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tree.h; path = include/xlsxwriter/third_party/tree.h; sourceTree = "<group>"; };
-		3BEC07C7B109B23359BC106365D6F8B2 /* packager.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = packager.c; path = src/packager.c; sourceTree = "<group>"; };
-		3E57C251FC22E00B21486870FBD7A358 /* Pods-FauxPasReportConverter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FauxPasReportConverter-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3EF632D028F7F6EC3B0D9077D68B730F /* custom.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = custom.c; path = src/custom.c; sourceTree = "<group>"; };
-		4138669CD9BD5B8078145E80A5F3CF2F /* xlsxwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlsxwriter.h; path = include/xlsxwriter.h; sourceTree = "<group>"; };
-		5D008AEAE57E98DBCC62689037E36D4A /* Pods-FauxPasReportConverter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FauxPasReportConverter-acknowledgements.plist"; sourceTree = "<group>"; };
-		62D5589695BF7A52E16E7DCF86BB1C9B /* drawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = drawing.h; path = include/xlsxwriter/drawing.h; sourceTree = "<group>"; };
-		647E33E2707FC109BFEDDBDA792B1770 /* core.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = core.c; path = src/core.c; sourceTree = "<group>"; };
-		6F83CC60916C48B47BC3CE648A6EEEAA /* content_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = content_types.h; path = include/xlsxwriter/content_types.h; sourceTree = "<group>"; };
-		74B3ED5F14710115D62389B45B7DEA28 /* libxlsxwriter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libxlsxwriter-umbrella.h"; path = "include/xlsxwriter/libxlsxwriter-umbrella.h"; sourceTree = "<group>"; };
-		7748AD817F6CEF5055BFFCCCB1CCA512 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = third_party/minizip/zip.c; sourceTree = "<group>"; };
-		7E913F2ABEADF9387592FE6F8FACD184 /* Pods-FauxPasReportConverter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FauxPasReportConverter-dummy.m"; sourceTree = "<group>"; };
-		859F439C8C962ECDB2F76D161AA3B945 /* liblibxlsxwriter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibxlsxwriter.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CE2CD26F4E9B43C02E86C32E8438B16 /* xmlwriter.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = xmlwriter.c; path = src/xmlwriter.c; sourceTree = "<group>"; };
-		8FE7D7113D0FF879A761D30502702BB3 /* worksheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = worksheet.h; path = include/xlsxwriter/worksheet.h; sourceTree = "<group>"; };
-		907D7CB72686B103F75EB5653A059B7C /* chart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chart.h; path = include/xlsxwriter/chart.h; sourceTree = "<group>"; };
-		909DBF457C43A36043005BB365BE57A1 /* content_types.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = content_types.c; path = src/content_types.c; sourceTree = "<group>"; };
-		918E43C2C7A08E8C60F4BBDE25596EBF /* xmlwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = include/xlsxwriter/xmlwriter.h; sourceTree = "<group>"; };
-		9212E44E978427EB983EC2D9F2927ACC /* custom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = custom.h; path = include/xlsxwriter/custom.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C8A4366E143A1B3ED723BE3D45955F4 /* theme.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = theme.c; path = src/theme.c; sourceTree = "<group>"; };
-		A112BCFE83C7F6D69B9FF2FB91F84397 /* format.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = format.c; path = src/format.c; sourceTree = "<group>"; };
-		A23CE8EC6F25A7A6B3C3768BCD8B8D64 /* utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utility.h; path = include/xlsxwriter/utility.h; sourceTree = "<group>"; };
-		A49881333541769D590E217A4964CFC2 /* Pods-FauxPasReportConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FauxPasReportConverter.debug.xcconfig"; sourceTree = "<group>"; };
-		A8C0666997C618D88667EE81636699B4 /* styles.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = styles.c; path = src/styles.c; sourceTree = "<group>"; };
-		AB8ACDB49949ED73CC941B1718A7B70A /* utility.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = utility.c; path = src/utility.c; sourceTree = "<group>"; };
-		AF8B2C4A265613073967FB7898142605 /* worksheet.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = worksheet.c; path = src/worksheet.c; sourceTree = "<group>"; };
-		B280229EC42D6A7A5FD027DC63DCCC0A /* shared_strings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shared_strings.h; path = include/xlsxwriter/shared_strings.h; sourceTree = "<group>"; };
-		BD4AC35FF2B161983A65A9FEDAD4CBD4 /* hash_table.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hash_table.c; path = src/hash_table.c; sourceTree = "<group>"; };
-		BF01C4B82CF891D13C80E767ED4BD1B4 /* theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = theme.h; path = include/xlsxwriter/theme.h; sourceTree = "<group>"; };
-		BFC9C39B6D72C82E09FF6D7303BEA1BD /* styles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = styles.h; path = include/xlsxwriter/styles.h; sourceTree = "<group>"; };
-		C375A326F70ABDF9937E162D1EE40CC6 /* app.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = app.h; path = include/xlsxwriter/app.h; sourceTree = "<group>"; };
-		CC22EF23B4C4E2E5F01C60C240BD86CF /* relationships.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = relationships.c; path = src/relationships.c; sourceTree = "<group>"; };
-		CFDE07DD1BB37F889E1C4466BE2DE8E9 /* libxlsxwriter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libxlsxwriter-prefix.pch"; sourceTree = "<group>"; };
-		D5CF3FE4E576B68F292EDDC44877C960 /* Pods-FauxPasReportConverter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FauxPasReportConverter-resources.sh"; sourceTree = "<group>"; };
-		D80D911779AB50F2893D99EBD8BDF2E0 /* core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core.h; path = include/xlsxwriter/core.h; sourceTree = "<group>"; };
-		D827E87624D0111099034A854CD3CADE /* chart.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = chart.c; path = src/chart.c; sourceTree = "<group>"; };
-		D9204154269200AF5950698EE61BC186 /* Pods-FauxPasReportConverter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FauxPasReportConverter-frameworks.sh"; sourceTree = "<group>"; };
-		DECD47031093BB003DFDF7131DF19F1D /* libxlsxwriter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libxlsxwriter-dummy.m"; sourceTree = "<group>"; };
-		E340DAC1AD0867627163A56D0DF98F0F /* libxlsxwriter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libxlsxwriter.xcconfig; sourceTree = "<group>"; };
-		E4C627C9E4F9A639CA4D3E0EC04ADBEA /* hash_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash_table.h; path = include/xlsxwriter/hash_table.h; sourceTree = "<group>"; };
-		EBC73555115085DDC49519E004610CD5 /* app.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = app.c; path = src/app.c; sourceTree = "<group>"; };
-		F4794A036DE313204D3B20D3A440C08B /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = include/xlsxwriter/third_party/queue.h; sourceTree = "<group>"; };
-		F5702E3851BF6DC73A1E411C50AE67EC /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = include/xlsxwriter/format.h; sourceTree = "<group>"; };
-		F61ED00223F2CEFA004A9E8E118277F4 /* workbook.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = workbook.c; path = src/workbook.c; sourceTree = "<group>"; };
-		F8C1EED9AE5951E43AE5D96DB2D877F3 /* relationships.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relationships.h; path = include/xlsxwriter/relationships.h; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		66E95424A4F46CD9D5441F037E53BBDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4AF2A66C9741697A20064F143DC04D1 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7DF7B9ED684AD995DDF54BBFFF98549 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9ED8488B532A2733872A8F300C106201 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		254E0F0F5B042F704FCCBC34B866B6BB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8AB57E74883885B2E60FCE7525FDA39B /* libxlsxwriter */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		28C17CEF104526ACA07B6EEE217EC43E /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				28C17CEF104526ACA07B6EEE217EC43E /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		570E3055B56E563810E6C9DBE2935D0A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				901341AE5A283A65C83F18C743330670 /* Pods-FauxPasReportConverter */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				254E0F0F5B042F704FCCBC34B866B6BB /* Pods */,
-				EF8614F627D5D549B9BD3BBBD7C9C553 /* Products */,
-				570E3055B56E563810E6C9DBE2935D0A /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8AB57E74883885B2E60FCE7525FDA39B /* libxlsxwriter */ = {
-			isa = PBXGroup;
-			children = (
-				EBC73555115085DDC49519E004610CD5 /* app.c */,
-				C375A326F70ABDF9937E162D1EE40CC6 /* app.h */,
-				D827E87624D0111099034A854CD3CADE /* chart.c */,
-				907D7CB72686B103F75EB5653A059B7C /* chart.h */,
-				242D2026CEBDBB7D2758B74A71D2BB49 /* common.h */,
-				909DBF457C43A36043005BB365BE57A1 /* content_types.c */,
-				6F83CC60916C48B47BC3CE648A6EEEAA /* content_types.h */,
-				647E33E2707FC109BFEDDBDA792B1770 /* core.c */,
-				D80D911779AB50F2893D99EBD8BDF2E0 /* core.h */,
-				3EF632D028F7F6EC3B0D9077D68B730F /* custom.c */,
-				9212E44E978427EB983EC2D9F2927ACC /* custom.h */,
-				159975DFC0FDFC25847385653DDA59BD /* drawing.c */,
-				62D5589695BF7A52E16E7DCF86BB1C9B /* drawing.h */,
-				A112BCFE83C7F6D69B9FF2FB91F84397 /* format.c */,
-				F5702E3851BF6DC73A1E411C50AE67EC /* format.h */,
-				BD4AC35FF2B161983A65A9FEDAD4CBD4 /* hash_table.c */,
-				E4C627C9E4F9A639CA4D3E0EC04ADBEA /* hash_table.h */,
-				389685F1423EE4DB740D43B5E5895200 /* ioapi.c */,
-				30DE20A8A007E413B55DB82F6A0CE141 /* ioapi.h */,
-				74B3ED5F14710115D62389B45B7DEA28 /* libxlsxwriter-umbrella.h */,
-				3BEC07C7B109B23359BC106365D6F8B2 /* packager.c */,
-				178F455047388D3EB33DF331DD756B9F /* packager.h */,
-				F4794A036DE313204D3B20D3A440C08B /* queue.h */,
-				CC22EF23B4C4E2E5F01C60C240BD86CF /* relationships.c */,
-				F8C1EED9AE5951E43AE5D96DB2D877F3 /* relationships.h */,
-				250E23366A64672C5C9DF96C74F9D774 /* shared_strings.c */,
-				B280229EC42D6A7A5FD027DC63DCCC0A /* shared_strings.h */,
-				A8C0666997C618D88667EE81636699B4 /* styles.c */,
-				BFC9C39B6D72C82E09FF6D7303BEA1BD /* styles.h */,
-				9C8A4366E143A1B3ED723BE3D45955F4 /* theme.c */,
-				BF01C4B82CF891D13C80E767ED4BD1B4 /* theme.h */,
-				3BEAD5B838558EFF650A4170A6A986C3 /* tree.h */,
-				AB8ACDB49949ED73CC941B1718A7B70A /* utility.c */,
-				A23CE8EC6F25A7A6B3C3768BCD8B8D64 /* utility.h */,
-				F61ED00223F2CEFA004A9E8E118277F4 /* workbook.c */,
-				3B7B61E01243080308D7954B32ECE144 /* workbook.h */,
-				AF8B2C4A265613073967FB7898142605 /* worksheet.c */,
-				8FE7D7113D0FF879A761D30502702BB3 /* worksheet.h */,
-				4138669CD9BD5B8078145E80A5F3CF2F /* xlsxwriter.h */,
-				8CE2CD26F4E9B43C02E86C32E8438B16 /* xmlwriter.c */,
-				918E43C2C7A08E8C60F4BBDE25596EBF /* xmlwriter.h */,
-				7748AD817F6CEF5055BFFCCCB1CCA512 /* zip.c */,
-				3B60A85C8F25C694D22C14382E66F9B1 /* zip.h */,
-				BC859EDC82DF5C2E6639FCEBE8FB1A5F /* Support Files */,
-			);
-			path = libxlsxwriter;
-			sourceTree = "<group>";
-		};
-		901341AE5A283A65C83F18C743330670 /* Pods-FauxPasReportConverter */ = {
-			isa = PBXGroup;
-			children = (
-				3E57C251FC22E00B21486870FBD7A358 /* Pods-FauxPasReportConverter-acknowledgements.markdown */,
-				5D008AEAE57E98DBCC62689037E36D4A /* Pods-FauxPasReportConverter-acknowledgements.plist */,
-				7E913F2ABEADF9387592FE6F8FACD184 /* Pods-FauxPasReportConverter-dummy.m */,
-				D9204154269200AF5950698EE61BC186 /* Pods-FauxPasReportConverter-frameworks.sh */,
-				D5CF3FE4E576B68F292EDDC44877C960 /* Pods-FauxPasReportConverter-resources.sh */,
-				A49881333541769D590E217A4964CFC2 /* Pods-FauxPasReportConverter.debug.xcconfig */,
-				1C43E8289F32C25276BEFD8438AC34B9 /* Pods-FauxPasReportConverter.release.xcconfig */,
-			);
-			name = "Pods-FauxPasReportConverter";
-			path = "Target Support Files/Pods-FauxPasReportConverter";
-			sourceTree = "<group>";
-		};
-		BC859EDC82DF5C2E6639FCEBE8FB1A5F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E340DAC1AD0867627163A56D0DF98F0F /* libxlsxwriter.xcconfig */,
-				DECD47031093BB003DFDF7131DF19F1D /* libxlsxwriter-dummy.m */,
-				CFDE07DD1BB37F889E1C4466BE2DE8E9 /* libxlsxwriter-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/libxlsxwriter";
-			sourceTree = "<group>";
-		};
-		EF8614F627D5D549B9BD3BBBD7C9C553 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				859F439C8C962ECDB2F76D161AA3B945 /* liblibxlsxwriter.a */,
-				20E34C625A023AD6E0E67C138EE76C35 /* libPods-FauxPasReportConverter.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		C0368ADF88A077B84F6479BDBBB3C7CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6BB6DBA62A8B848D95DD411C47B1A107 /* app.h in Headers */,
-				9885A47F3A66DB4FF2E6939A2EA254C2 /* chart.h in Headers */,
-				79D00E81446A3B6ABD46D2E885EA291E /* common.h in Headers */,
-				C754B446398C1C38E2E60313C6643CB5 /* content_types.h in Headers */,
-				5C2E27556A1CD9C018A60631A4E1F52A /* core.h in Headers */,
-				161617703A5B376CD0B93046BF9E0EAB /* custom.h in Headers */,
-				29F2643B9D770D6E2D8A5395D4E5EEC5 /* drawing.h in Headers */,
-				441B2C44AC677746DF0534C4B53BC9BA /* format.h in Headers */,
-				5BE295924753A3917E799E7C47C10EDF /* hash_table.h in Headers */,
-				DD4A973F0E520DFFBE7EAFA39ACF4CCC /* ioapi.h in Headers */,
-				27DC8409035E5E88441DA86549FA2F6B /* libxlsxwriter-umbrella.h in Headers */,
-				5D42ED4E8BACC0408CF4EFE4F1C62B99 /* packager.h in Headers */,
-				56C5A24A4BFBA24E563DE4F1A68DB6A4 /* queue.h in Headers */,
-				2F70E88AE5C6453EA8E2ED8745FD72A7 /* relationships.h in Headers */,
-				7DF6358FE2D745B6F75F49FF6DC29DDD /* shared_strings.h in Headers */,
-				EEE5AD5E18E0AF1DE65049A2C1645F71 /* styles.h in Headers */,
-				6C4F79F8A836DD0BDA90804E13B13336 /* theme.h in Headers */,
-				B36B4815A8F7FAE8D358C8589B9DDC77 /* tree.h in Headers */,
-				AC10912710DC0C3C645AE83DB5C4FB1A /* utility.h in Headers */,
-				810C71A2DB3ED6E60534026D54A34CF1 /* workbook.h in Headers */,
-				0A689BD46BADDC34F705C50C7CCB1DB1 /* worksheet.h in Headers */,
-				8CFF539BE0F4186D061B6017D4F25D7C /* xlsxwriter.h in Headers */,
-				8541AA22F91C5B34A8BFCBA4F040497D /* xmlwriter.h in Headers */,
-				8558E2CF009E1C458021472E5025A363 /* zip.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		284D3ECC3F609534E6DD1891F735A09F /* Pods-FauxPasReportConverter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C4831F99DE30E77CDD3D5C7A2315469 /* Build configuration list for PBXNativeTarget "Pods-FauxPasReportConverter" */;
-			buildPhases = (
-				E9C991A19953CBD96D1B4CFCA6FA6F75 /* Sources */,
-				D7DF7B9ED684AD995DDF54BBFFF98549 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				49FEBF143C9377A6037B6FE999263EAF /* PBXTargetDependency */,
-			);
-			name = "Pods-FauxPasReportConverter";
-			productName = "Pods-FauxPasReportConverter";
-			productReference = 20E34C625A023AD6E0E67C138EE76C35 /* libPods-FauxPasReportConverter.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		535DCBFA6C25405D54AE2B9EEADB8BD3 /* libxlsxwriter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0B1ADCAF072FB95EFE6268C5D6398CA /* Build configuration list for PBXNativeTarget "libxlsxwriter" */;
-			buildPhases = (
-				F6055AAB01381330A614D257FF447B25 /* Sources */,
-				66E95424A4F46CD9D5441F037E53BBDA /* Frameworks */,
-				C0368ADF88A077B84F6479BDBBB3C7CF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = libxlsxwriter;
-			productName = libxlsxwriter;
-			productReference = 859F439C8C962ECDB2F76D161AA3B945 /* liblibxlsxwriter.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EF8614F627D5D549B9BD3BBBD7C9C553 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				535DCBFA6C25405D54AE2B9EEADB8BD3 /* libxlsxwriter */,
-				284D3ECC3F609534E6DD1891F735A09F /* Pods-FauxPasReportConverter */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E9C991A19953CBD96D1B4CFCA6FA6F75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9D18DA447CA7658B2370936BEAB4B73 /* Pods-FauxPasReportConverter-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6055AAB01381330A614D257FF447B25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C58ECE6B325B531AFB9F81DDA389F5BF /* app.c in Sources */,
-				B169F853AA2ECAE7A8D861AE20E9F577 /* chart.c in Sources */,
-				E02CDCFF2A49415A8F72B6D26A576AD3 /* content_types.c in Sources */,
-				767716EBCC06101E9C5DF5F980CBABA3 /* core.c in Sources */,
-				060F330DBAE920F85254267120DAC56A /* custom.c in Sources */,
-				7D879F3F9452D9806A5DE656BFD515C7 /* drawing.c in Sources */,
-				9B3D1974E7F6591FDF29E0BA85B91A2B /* format.c in Sources */,
-				6674202C764103F18D233FBB619CE54C /* hash_table.c in Sources */,
-				591629DE3CDD99F4DFA44BAB6C6787FA /* ioapi.c in Sources */,
-				C2D1D6AA6687E6AA5303FBA4E3CDD162 /* libxlsxwriter-dummy.m in Sources */,
-				BB7D1F91B955D28B80C007D325888ED4 /* packager.c in Sources */,
-				A20E65EC1EE7FF6A646AB7DA6B43E3E0 /* relationships.c in Sources */,
-				E69BFCFDB880E1D7CC1A8243B6744EB3 /* shared_strings.c in Sources */,
-				CF7B0540A39DF5BFCA2B9707C1B0B5C6 /* styles.c in Sources */,
-				659245501CFF412AF84B7B3EB97A4559 /* theme.c in Sources */,
-				851FB61D371F99D3BBB4F3E8E430CD79 /* utility.c in Sources */,
-				DD382C49649D69827D60305BA17CBE3F /* workbook.c in Sources */,
-				87D2974B01C442BCC3E149C6E49ED6E9 /* worksheet.c in Sources */,
-				F3D83EFF64E66969C62DF5B0419097B5 /* xmlwriter.c in Sources */,
-				9F3153D1AD2CB1832DC7FBFE04AE6CD8 /* zip.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		49FEBF143C9377A6037B6FE999263EAF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = libxlsxwriter;
-			target = 535DCBFA6C25405D54AE2B9EEADB8BD3 /* libxlsxwriter */;
-			targetProxy = D1FA5F4D0549857D6337A63D96913767 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		239EAF8CD8AD6E88B2A7C96E451F05AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C43E8289F32C25276BEFD8438AC34B9 /* Pods-FauxPasReportConverter.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		39AB674EDFBE5E8CBB49A572FC60A29E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E340DAC1AD0867627163A56D0DF98F0F /* libxlsxwriter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		4888EEFBEA04FABA2120470F4B676BBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6B520F3BCCD085EE13DE1636CF576CA5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E340DAC1AD0867627163A56D0DF98F0F /* libxlsxwriter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		DA2E206EB90DF75A25332AE4AA713F31 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		F1A244EBF6E5101FB0A15B0D44368C3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A49881333541769D590E217A4964CFC2 /* Pods-FauxPasReportConverter.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA2E206EB90DF75A25332AE4AA713F31 /* Debug */,
-				4888EEFBEA04FABA2120470F4B676BBD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C4831F99DE30E77CDD3D5C7A2315469 /* Build configuration list for PBXNativeTarget "Pods-FauxPasReportConverter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1A244EBF6E5101FB0A15B0D44368C3F /* Debug */,
-				239EAF8CD8AD6E88B2A7C96E451F05AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E0B1ADCAF072FB95EFE6268C5D6398CA /* Build configuration list for PBXNativeTarget "libxlsxwriter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6B520F3BCCD085EE13DE1636CF576CA5 /* Debug */,
-				39AB674EDFBE5E8CBB49A572FC60A29E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>059205C3F701DF5A7363060D1A166489</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverter-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>060F330DBAE920F85254267120DAC56A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3EF632D028F7F6EC3B0D9077D68B730F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>0A689BD46BADDC34F705C50C7CCB1DB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8FE7D7113D0FF879A761D30502702BB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0E5C3916D81F03A0D8B05FD7164B6E0D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8583DEECF576AF5459E343B07309FFCD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>159975DFC0FDFC25847385653DDA59BD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>drawing.c</string>
+			<key>path</key>
+			<string>src/drawing.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>161617703A5B376CD0B93046BF9E0EAB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9212E44E978427EB983EC2D9F2927ACC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>178F455047388D3EB33DF331DD756B9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>packager.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/packager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1B24FF3CDE5DC903AFDD27C7486FD3CE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterUITests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1CA6EBC2E57D96052268211209D6AA52</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Cocoa.framework</string>
+			<key>path</key>
+			<string>Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>1CD66378F9BE1EE35E79709C74DA7BE6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA58719904BA95E2609FD061992A0494</string>
+				<string>FB941401096D51792053C67B4836326A</string>
+				<string>1B24FF3CDE5DC903AFDD27C7486FD3CE</string>
+				<string>E3B88F5D269DEF01005B0188D9EC24FA</string>
+				<string>93ED66C9E7198C4C88697E21BF005EF2</string>
+				<string>8583DEECF576AF5459E343B07309FFCD</string>
+				<string>7B6F3EDD0FC0779176D38D50D9FF55E0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverterUITests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-FauxPasReportConverterUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20ECDF9A7784EE09DD66FD512E5F0049</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>libxlsxwriter</string>
+			<key>target</key>
+			<string>535DCBFA6C25405D54AE2B9EEADB8BD3</string>
+			<key>targetProxy</key>
+			<string>23A6C610C57C3875E12AA4AA494AFBC8</string>
+		</dict>
+		<key>239EAF8CD8AD6E88B2A7C96E451F05AE</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3C86ECA0156ABF96E7FD7D06611A98DD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>23A6C610C57C3875E12AA4AA494AFBC8</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>535DCBFA6C25405D54AE2B9EEADB8BD3</string>
+			<key>remoteInfo</key>
+			<string>libxlsxwriter</string>
+		</dict>
+		<key>23C29DBFA767D43D68E93342C3F4F009</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>242D2026CEBDBB7D2758B74A71D2BB49</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>common.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/common.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>250E23366A64672C5C9DF96C74F9D774</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>shared_strings.c</string>
+			<key>path</key>
+			<string>src/shared_strings.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>254E0F0F5B042F704FCCBC34B866B6BB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8AB57E74883885B2E60FCE7525FDA39B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27DC8409035E5E88441DA86549FA2F6B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B3ED5F14710115D62389B45B7DEA28</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>284D3ECC3F609534E6DD1891F735A09F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3C4831F99DE30E77CDD3D5C7A2315469</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E9C991A19953CBD96D1B4CFCA6FA6F75</string>
+				<string>D7DF7B9ED684AD995DDF54BBFFF98549</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>49FEBF143C9377A6037B6FE999263EAF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverter</string>
+			<key>productName</key>
+			<string>Pods-FauxPasReportConverter</string>
+			<key>productReference</key>
+			<string>E5A683AE60396F01E267072CC57CDF53</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>28C17CEF104526ACA07B6EEE217EC43E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1CA6EBC2E57D96052268211209D6AA52</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>OS X</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29E54BB344D728ABC51C3DA4D948A86C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BDEF863C1E965DF48003A00384FC8695</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>29F2643B9D770D6E2D8A5395D4E5EEC5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62D5589695BF7A52E16E7DCF86BB1C9B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2CBFD6037B92359D7DD6EE34297D276A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0E5C3916D81F03A0D8B05FD7164B6E0D</string>
+				<string>A8CD609A90242FDC22D79539EF110367</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DA2E206EB90DF75A25332AE4AA713F31</string>
+				<string>4888EEFBEA04FABA2120470F4B676BBD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2F0DCFD3901D16C331FAD3171752EAAE</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-FauxPasReportConverterTests.a</string>
+			<key>path</key>
+			<string>libPods-FauxPasReportConverterTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2F6F7F3A397746E0A2DC9B923352FD33</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>682CA63F5FE44FE8054D513CD89B5738</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2F70E88AE5C6453EA8E2ED8745FD72A7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F8C1EED9AE5951E43AE5D96DB2D877F3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>30DE20A8A007E413B55DB82F6A0CE141</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ioapi.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/third_party/minizip/ioapi.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>389685F1423EE4DB740D43B5E5895200</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ioapi.c</string>
+			<key>path</key>
+			<string>third_party/minizip/ioapi.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>39AB674EDFBE5E8CBB49A572FC60A29E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E340DAC1AD0867627163A56D0DF98F0F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>39E9EE8210D861DFD82346C1F5EB7218</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>28C17CEF104526ACA07B6EEE217EC43E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B60A85C8F25C694D22C14382E66F9B1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>zip.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/third_party/minizip/zip.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B7B61E01243080308D7954B32ECE144</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>workbook.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/workbook.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BEAD5B838558EFF650A4170A6A986C3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>tree.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/third_party/tree.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BEC07C7B109B23359BC106365D6F8B2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>packager.c</string>
+			<key>path</key>
+			<string>src/packager.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C4831F99DE30E77CDD3D5C7A2315469</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F1A244EBF6E5101FB0A15B0D44368C3F</string>
+				<string>239EAF8CD8AD6E88B2A7C96E451F05AE</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3C86ECA0156ABF96E7FD7D06611A98DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverter.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E650BE105F421C420A98018507121D3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>059205C3F701DF5A7363060D1A166489</string>
+				<string>53E7FBEC9AE81ABC2FFB5F96D5919418</string>
+				<string>63B720FA0894DC168BE07706DABD0CDB</string>
+				<string>A176993D67F7E600E2EE144A14B732A1</string>
+				<string>64AC5A6AF4CEFDFC5260FD4DF3A7B68B</string>
+				<string>56DA25D2D2889202982258A937C47240</string>
+				<string>3C86ECA0156ABF96E7FD7D06611A98DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverter</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-FauxPasReportConverter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3EF632D028F7F6EC3B0D9077D68B730F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>custom.c</string>
+			<key>path</key>
+			<string>src/custom.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3FB9E65DCCF7EE30A24156B032CDE9B7</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>535DCBFA6C25405D54AE2B9EEADB8BD3</string>
+			<key>remoteInfo</key>
+			<string>libxlsxwriter</string>
+		</dict>
+		<key>4138669CD9BD5B8078145E80A5F3CF2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>xlsxwriter.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>41F79889CDA5178BF7A9DA010853F98B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1CA6EBC2E57D96052268211209D6AA52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>441B2C44AC677746DF0534C4B53BC9BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F5702E3851BF6DC73A1E411C50AE67EC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4888EEFBEA04FABA2120470F4B676BBD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_RELEASE=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>49FEBF143C9377A6037B6FE999263EAF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>libxlsxwriter</string>
+			<key>target</key>
+			<string>535DCBFA6C25405D54AE2B9EEADB8BD3</string>
+			<key>targetProxy</key>
+			<string>D1FA5F4D0549857D6337A63D96913767</string>
+		</dict>
+		<key>535DCBFA6C25405D54AE2B9EEADB8BD3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E0B1ADCAF072FB95EFE6268C5D6398CA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F6055AAB01381330A614D257FF447B25</string>
+				<string>66E95424A4F46CD9D5441F037E53BBDA</string>
+				<string>C0368ADF88A077B84F6479BDBBB3C7CF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>libxlsxwriter</string>
+			<key>productName</key>
+			<string>libxlsxwriter</string>
+			<key>productReference</key>
+			<string>FA7BC8E6A87424F14B4A77326606FBFA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>53E7FBEC9AE81ABC2FFB5F96D5919418</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverter-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56C5A24A4BFBA24E563DE4F1A68DB6A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F4794A036DE313204D3B20D3A440C08B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>56DA25D2D2889202982258A937C47240</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverter.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>591629DE3CDD99F4DFA44BAB6C6787FA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>389685F1423EE4DB740D43B5E5895200</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>5BE295924753A3917E799E7C47C10EDF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E4C627C9E4F9A639CA4D3E0EC04ADBEA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5C2E27556A1CD9C018A60631A4E1F52A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D80D911779AB50F2893D99EBD8BDF2E0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5D42ED4E8BACC0408CF4EFE4F1C62B99</key>
+		<dict>
+			<key>fileRef</key>
+			<string>178F455047388D3EB33DF331DD756B9F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>62D5589695BF7A52E16E7DCF86BB1C9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>drawing.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/drawing.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63B720FA0894DC168BE07706DABD0CDB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverter-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>647E33E2707FC109BFEDDBDA792B1770</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>core.c</string>
+			<key>path</key>
+			<string>src/core.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>64AC5A6AF4CEFDFC5260FD4DF3A7B68B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverter-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6557F6806507062C18BAA821AEA2E4F6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2F6F7F3A397746E0A2DC9B923352FD33</string>
+				<string>BEDCB7D3ADAF45B1F2F39253B85C49C4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>659245501CFF412AF84B7B3EB97A4559</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C8A4366E143A1B3ED723BE3D45955F4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>6674202C764103F18D233FBB619CE54C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BD4AC35FF2B161983A65A9FEDAD4CBD4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>66E95424A4F46CD9D5441F037E53BBDA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F4AF2A66C9741697A20064F143DC04D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>67F3FA37BC1C008691192D96EDA013FB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>682CA63F5FE44FE8054D513CD89B5738</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6B520F3BCCD085EE13DE1636CF576CA5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E340DAC1AD0867627163A56D0DF98F0F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6BB6DBA62A8B848D95DD411C47B1A107</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C375A326F70ABDF9937E162D1EE40CC6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6C4F79F8A836DD0BDA90804E13B13336</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BF01C4B82CF891D13C80E767ED4BD1B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6F83CC60916C48B47BC3CE648A6EEEAA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>content_types.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/content_types.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>720853C2F7B7456ABD0AA739912BBFC9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>41F79889CDA5178BF7A9DA010853F98B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>74B3ED5F14710115D62389B45B7DEA28</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>libxlsxwriter-umbrella.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/libxlsxwriter-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>767716EBCC06101E9C5DF5F980CBABA3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>647E33E2707FC109BFEDDBDA792B1770</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>7748AD817F6CEF5055BFFCCCB1CCA512</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>zip.c</string>
+			<key>path</key>
+			<string>third_party/minizip/zip.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7902983FE754A7999D2E66BA500743B7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-FauxPasReportConverterUITests.a</string>
+			<key>path</key>
+			<string>libPods-FauxPasReportConverterUITests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>795FBE4392EA4C9007FE7EE9954705BB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1CA6EBC2E57D96052268211209D6AA52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>79D00E81446A3B6ABD46D2E885EA291E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>242D2026CEBDBB7D2758B74A71D2BB49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7B6F3EDD0FC0779176D38D50D9FF55E0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D879F3F9452D9806A5DE656BFD515C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>159975DFC0FDFC25847385653DDA59BD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
+				<string>39E9EE8210D861DFD82346C1F5EB7218</string>
+				<string>254E0F0F5B042F704FCCBC34B866B6BB</string>
+				<string>EB877DAFBE759D4FECAF62930E2E4E2B</string>
+				<string>EA0DB0901F510F88BE82AA4C24518D30</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DF6358FE2D745B6F75F49FF6DC29DDD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B280229EC42D6A7A5FD027DC63DCCC0A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7DFAEA63F9C60A28365B7329031C6939</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1B24FF3CDE5DC903AFDD27C7486FD3CE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>810C71A2DB3ED6E60534026D54A34CF1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B7B61E01243080308D7954B32ECE144</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>851FB61D371F99D3BBB4F3E8E430CD79</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AB8ACDB49949ED73CC941B1718A7B70A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>8541AA22F91C5B34A8BFCBA4F040497D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>918E43C2C7A08E8C60F4BBDE25596EBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8558E2CF009E1C458021472E5025A363</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B60A85C8F25C694D22C14382E66F9B1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8583DEECF576AF5459E343B07309FFCD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86545CEAAB73C1721FC56B583EEA96AE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterTests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8682DBA5012CC11A8CB49036AEDFBB57</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>29E54BB344D728ABC51C3DA4D948A86C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>87D2974B01C442BCC3E149C6E49ED6E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AF8B2C4A265613073967FB7898142605</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>8A258E0271E58F7C01D37BF73709F307</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7DFAEA63F9C60A28365B7329031C6939</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8AB57E74883885B2E60FCE7525FDA39B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EBC73555115085DDC49519E004610CD5</string>
+				<string>C375A326F70ABDF9937E162D1EE40CC6</string>
+				<string>D827E87624D0111099034A854CD3CADE</string>
+				<string>907D7CB72686B103F75EB5653A059B7C</string>
+				<string>242D2026CEBDBB7D2758B74A71D2BB49</string>
+				<string>909DBF457C43A36043005BB365BE57A1</string>
+				<string>6F83CC60916C48B47BC3CE648A6EEEAA</string>
+				<string>647E33E2707FC109BFEDDBDA792B1770</string>
+				<string>D80D911779AB50F2893D99EBD8BDF2E0</string>
+				<string>3EF632D028F7F6EC3B0D9077D68B730F</string>
+				<string>9212E44E978427EB983EC2D9F2927ACC</string>
+				<string>159975DFC0FDFC25847385653DDA59BD</string>
+				<string>62D5589695BF7A52E16E7DCF86BB1C9B</string>
+				<string>A112BCFE83C7F6D69B9FF2FB91F84397</string>
+				<string>F5702E3851BF6DC73A1E411C50AE67EC</string>
+				<string>BD4AC35FF2B161983A65A9FEDAD4CBD4</string>
+				<string>E4C627C9E4F9A639CA4D3E0EC04ADBEA</string>
+				<string>389685F1423EE4DB740D43B5E5895200</string>
+				<string>30DE20A8A007E413B55DB82F6A0CE141</string>
+				<string>74B3ED5F14710115D62389B45B7DEA28</string>
+				<string>3BEC07C7B109B23359BC106365D6F8B2</string>
+				<string>178F455047388D3EB33DF331DD756B9F</string>
+				<string>F4794A036DE313204D3B20D3A440C08B</string>
+				<string>CC22EF23B4C4E2E5F01C60C240BD86CF</string>
+				<string>F8C1EED9AE5951E43AE5D96DB2D877F3</string>
+				<string>250E23366A64672C5C9DF96C74F9D774</string>
+				<string>B280229EC42D6A7A5FD027DC63DCCC0A</string>
+				<string>A8C0666997C618D88667EE81636699B4</string>
+				<string>BFC9C39B6D72C82E09FF6D7303BEA1BD</string>
+				<string>9C8A4366E143A1B3ED723BE3D45955F4</string>
+				<string>BF01C4B82CF891D13C80E767ED4BD1B4</string>
+				<string>3BEAD5B838558EFF650A4170A6A986C3</string>
+				<string>AB8ACDB49949ED73CC941B1718A7B70A</string>
+				<string>A23CE8EC6F25A7A6B3C3768BCD8B8D64</string>
+				<string>F61ED00223F2CEFA004A9E8E118277F4</string>
+				<string>3B7B61E01243080308D7954B32ECE144</string>
+				<string>AF8B2C4A265613073967FB7898142605</string>
+				<string>8FE7D7113D0FF879A761D30502702BB3</string>
+				<string>4138669CD9BD5B8078145E80A5F3CF2F</string>
+				<string>8CE2CD26F4E9B43C02E86C32E8438B16</string>
+				<string>918E43C2C7A08E8C60F4BBDE25596EBF</string>
+				<string>7748AD817F6CEF5055BFFCCCB1CCA512</string>
+				<string>3B60A85C8F25C694D22C14382E66F9B1</string>
+				<string>BC859EDC82DF5C2E6639FCEBE8FB1A5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>libxlsxwriter</string>
+			<key>path</key>
+			<string>libxlsxwriter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CE2CD26F4E9B43C02E86C32E8438B16</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>xmlwriter.c</string>
+			<key>path</key>
+			<string>src/xmlwriter.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CFF539BE0F4186D061B6017D4F25D7C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4138669CD9BD5B8078145E80A5F3CF2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8ED174101A50B082B3EF0678AFABBED9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>libxlsxwriter</string>
+			<key>target</key>
+			<string>535DCBFA6C25405D54AE2B9EEADB8BD3</string>
+			<key>targetProxy</key>
+			<string>3FB9E65DCCF7EE30A24156B032CDE9B7</string>
+		</dict>
+		<key>8FE7D7113D0FF879A761D30502702BB3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>worksheet.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/worksheet.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>907D7CB72686B103F75EB5653A059B7C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>chart.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/chart.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>909DBF457C43A36043005BB365BE57A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>content_types.c</string>
+			<key>path</key>
+			<string>src/content_types.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>918E43C2C7A08E8C60F4BBDE25596EBF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>xmlwriter.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/xmlwriter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9212E44E978427EB983EC2D9F2927ACC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>custom.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/custom.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>text.script.ruby</string>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>93ED66C9E7198C4C88697E21BF005EF2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterUITests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9885A47F3A66DB4FF2E6939A2EA254C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>907D7CB72686B103F75EB5653A059B7C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9B3D1974E7F6591FDF29E0BA85B91A2B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A112BCFE83C7F6D69B9FF2FB91F84397</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>9C8A4366E143A1B3ED723BE3D45955F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>theme.c</string>
+			<key>path</key>
+			<string>src/theme.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9ED8488B532A2733872A8F300C106201</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1CA6EBC2E57D96052268211209D6AA52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9F3153D1AD2CB1832DC7FBFE04AE6CD8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7748AD817F6CEF5055BFFCCCB1CCA512</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>A112BCFE83C7F6D69B9FF2FB91F84397</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>format.c</string>
+			<key>path</key>
+			<string>src/format.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A176993D67F7E600E2EE144A14B732A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverter-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A20E65EC1EE7FF6A646AB7DA6B43E3E0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CC22EF23B4C4E2E5F01C60C240BD86CF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>A23CE8EC6F25A7A6B3C3768BCD8B8D64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>utility.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/utility.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8C0666997C618D88667EE81636699B4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>styles.c</string>
+			<key>path</key>
+			<string>src/styles.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8CD609A90242FDC22D79539EF110367</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7B6F3EDD0FC0779176D38D50D9FF55E0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>AB8ACDB49949ED73CC941B1718A7B70A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>utility.c</string>
+			<key>path</key>
+			<string>src/utility.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC10912710DC0C3C645AE83DB5C4FB1A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A23CE8EC6F25A7A6B3C3768BCD8B8D64</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>AF8B2C4A265613073967FB7898142605</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>worksheet.c</string>
+			<key>path</key>
+			<string>src/worksheet.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B169F853AA2ECAE7A8D861AE20E9F577</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D827E87624D0111099034A854CD3CADE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>B280229EC42D6A7A5FD027DC63DCCC0A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>shared_strings.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/shared_strings.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B36B4815A8F7FAE8D358C8589B9DDC77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BEAD5B838558EFF650A4170A6A986C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B4791DE415EEB3B6181D5E1B20AD7AB9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterTests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B65AE60B1D3FE4345AD2DB52DBBFB732</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>795FBE4392EA4C9007FE7EE9954705BB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BAE7899E3E13E9342C97720637D98FD2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>2CBFD6037B92359D7DD6EE34297D276A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8A258E0271E58F7C01D37BF73709F307</string>
+				<string>B65AE60B1D3FE4345AD2DB52DBBFB732</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>20ECDF9A7784EE09DD66FD512E5F0049</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverterUITests</string>
+			<key>productName</key>
+			<string>Pods-FauxPasReportConverterUITests</string>
+			<key>productReference</key>
+			<string>7902983FE754A7999D2E66BA500743B7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>BB7D1F91B955D28B80C007D325888ED4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BEC07C7B109B23359BC106365D6F8B2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>BC859EDC82DF5C2E6639FCEBE8FB1A5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E340DAC1AD0867627163A56D0DF98F0F</string>
+				<string>DECD47031093BB003DFDF7131DF19F1D</string>
+				<string>CFDE07DD1BB37F889E1C4466BE2DE8E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/libxlsxwriter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BD4AC35FF2B161983A65A9FEDAD4CBD4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>hash_table.c</string>
+			<key>path</key>
+			<string>src/hash_table.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BDEF863C1E965DF48003A00384FC8695</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterTests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEDCB7D3ADAF45B1F2F39253B85C49C4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>67F3FA37BC1C008691192D96EDA013FB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>BF01C4B82CF891D13C80E767ED4BD1B4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>theme.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/theme.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BFC9C39B6D72C82E09FF6D7303BEA1BD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>styles.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/styles.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C0368ADF88A077B84F6479BDBBB3C7CF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6BB6DBA62A8B848D95DD411C47B1A107</string>
+				<string>9885A47F3A66DB4FF2E6939A2EA254C2</string>
+				<string>79D00E81446A3B6ABD46D2E885EA291E</string>
+				<string>C754B446398C1C38E2E60313C6643CB5</string>
+				<string>5C2E27556A1CD9C018A60631A4E1F52A</string>
+				<string>161617703A5B376CD0B93046BF9E0EAB</string>
+				<string>29F2643B9D770D6E2D8A5395D4E5EEC5</string>
+				<string>441B2C44AC677746DF0534C4B53BC9BA</string>
+				<string>5BE295924753A3917E799E7C47C10EDF</string>
+				<string>DD4A973F0E520DFFBE7EAFA39ACF4CCC</string>
+				<string>27DC8409035E5E88441DA86549FA2F6B</string>
+				<string>5D42ED4E8BACC0408CF4EFE4F1C62B99</string>
+				<string>56C5A24A4BFBA24E563DE4F1A68DB6A4</string>
+				<string>2F70E88AE5C6453EA8E2ED8745FD72A7</string>
+				<string>7DF6358FE2D745B6F75F49FF6DC29DDD</string>
+				<string>EEE5AD5E18E0AF1DE65049A2C1645F71</string>
+				<string>6C4F79F8A836DD0BDA90804E13B13336</string>
+				<string>B36B4815A8F7FAE8D358C8589B9DDC77</string>
+				<string>AC10912710DC0C3C645AE83DB5C4FB1A</string>
+				<string>810C71A2DB3ED6E60534026D54A34CF1</string>
+				<string>0A689BD46BADDC34F705C50C7CCB1DB1</string>
+				<string>8CFF539BE0F4186D061B6017D4F25D7C</string>
+				<string>8541AA22F91C5B34A8BFCBA4F040497D</string>
+				<string>8558E2CF009E1C458021472E5025A363</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C2D1D6AA6687E6AA5303FBA4E3CDD162</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DECD47031093BB003DFDF7131DF19F1D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C375A326F70ABDF9937E162D1EE40CC6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>app.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/app.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C58ECE6B325B531AFB9F81DDA389F5BF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EBC73555115085DDC49519E004610CD5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>C754B446398C1C38E2E60313C6643CB5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F83CC60916C48B47BC3CE648A6EEEAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>CC22EF23B4C4E2E5F01C60C240BD86CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>relationships.c</string>
+			<key>path</key>
+			<string>src/relationships.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CF7B0540A39DF5BFCA2B9707C1B0B5C6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8C0666997C618D88667EE81636699B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>CFDE07DD1BB37F889E1C4466BE2DE8E9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>libxlsxwriter-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1FA5F4D0549857D6337A63D96913767</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>535DCBFA6C25405D54AE2B9EEADB8BD3</string>
+			<key>remoteInfo</key>
+			<string>libxlsxwriter</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>EB877DAFBE759D4FECAF62930E2E4E2B</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>535DCBFA6C25405D54AE2B9EEADB8BD3</string>
+				<string>284D3ECC3F609534E6DD1891F735A09F</string>
+				<string>F72D0B409BCE8A6FD638DDC6C246E71A</string>
+				<string>BAE7899E3E13E9342C97720637D98FD2</string>
+			</array>
+		</dict>
+		<key>D7DF7B9ED684AD995DDF54BBFFF98549</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9ED8488B532A2733872A8F300C106201</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D80D911779AB50F2893D99EBD8BDF2E0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>core.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/core.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D827E87624D0111099034A854CD3CADE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>chart.c</string>
+			<key>path</key>
+			<string>src/chart.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D9D18DA447CA7658B2370936BEAB4B73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63B720FA0894DC168BE07706DABD0CDB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA2E206EB90DF75A25332AE4AA713F31</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_DEBUG=1</string>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DD382C49649D69827D60305BA17CBE3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F61ED00223F2CEFA004A9E8E118277F4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>DD4A973F0E520DFFBE7EAFA39ACF4CCC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>30DE20A8A007E413B55DB82F6A0CE141</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DECD47031093BB003DFDF7131DF19F1D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>libxlsxwriter-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFB06317AF4BA0BC67E479B6635FBDCB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterTests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E02CDCFF2A49415A8F72B6D26A576AD3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>909DBF457C43A36043005BB365BE57A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>E0B1ADCAF072FB95EFE6268C5D6398CA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6B520F3BCCD085EE13DE1636CF576CA5</string>
+				<string>39AB674EDFBE5E8CBB49A572FC60A29E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E340DAC1AD0867627163A56D0DF98F0F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>libxlsxwriter.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E359D68A27F51BC72C30B4291E7AA4D0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B4791DE415EEB3B6181D5E1B20AD7AB9</string>
+				<string>DFB06317AF4BA0BC67E479B6635FBDCB</string>
+				<string>BDEF863C1E965DF48003A00384FC8695</string>
+				<string>86545CEAAB73C1721FC56B583EEA96AE</string>
+				<string>23C29DBFA767D43D68E93342C3F4F009</string>
+				<string>682CA63F5FE44FE8054D513CD89B5738</string>
+				<string>67F3FA37BC1C008691192D96EDA013FB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverterTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-FauxPasReportConverterTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E3B88F5D269DEF01005B0188D9EC24FA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterUITests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E4C627C9E4F9A639CA4D3E0EC04ADBEA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>hash_table.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/hash_table.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5A683AE60396F01E267072CC57CDF53</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-FauxPasReportConverter.a</string>
+			<key>path</key>
+			<string>libPods-FauxPasReportConverter.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E69BFCFDB880E1D7CC1A8243B6744EB3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>250E23366A64672C5C9DF96C74F9D774</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>E9C991A19953CBD96D1B4CFCA6FA6F75</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D9D18DA447CA7658B2370936BEAB4B73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EA0DB0901F510F88BE82AA4C24518D30</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E650BE105F421C420A98018507121D3</string>
+				<string>E359D68A27F51BC72C30B4291E7AA4D0</string>
+				<string>1CD66378F9BE1EE35E79709C74DA7BE6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EB877DAFBE759D4FECAF62930E2E4E2B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA7BC8E6A87424F14B4A77326606FBFA</string>
+				<string>E5A683AE60396F01E267072CC57CDF53</string>
+				<string>2F0DCFD3901D16C331FAD3171752EAAE</string>
+				<string>7902983FE754A7999D2E66BA500743B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EBC73555115085DDC49519E004610CD5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>app.c</string>
+			<key>path</key>
+			<string>src/app.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EEE5AD5E18E0AF1DE65049A2C1645F71</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BFC9C39B6D72C82E09FF6D7303BEA1BD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F1A244EBF6E5101FB0A15B0D44368C3F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>56DA25D2D2889202982258A937C47240</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F3D83EFF64E66969C62DF5B0419097B5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8CE2CD26F4E9B43C02E86C32E8438B16</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DNOCRYPT=1 -DNOUNCRYPT=1</string>
+			</dict>
+		</dict>
+		<key>F4794A036DE313204D3B20D3A440C08B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>queue.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/third_party/queue.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F4AF2A66C9741697A20064F143DC04D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1CA6EBC2E57D96052268211209D6AA52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F5702E3851BF6DC73A1E411C50AE67EC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>format.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/format.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6055AAB01381330A614D257FF447B25</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C58ECE6B325B531AFB9F81DDA389F5BF</string>
+				<string>B169F853AA2ECAE7A8D861AE20E9F577</string>
+				<string>E02CDCFF2A49415A8F72B6D26A576AD3</string>
+				<string>767716EBCC06101E9C5DF5F980CBABA3</string>
+				<string>060F330DBAE920F85254267120DAC56A</string>
+				<string>7D879F3F9452D9806A5DE656BFD515C7</string>
+				<string>9B3D1974E7F6591FDF29E0BA85B91A2B</string>
+				<string>6674202C764103F18D233FBB619CE54C</string>
+				<string>591629DE3CDD99F4DFA44BAB6C6787FA</string>
+				<string>C2D1D6AA6687E6AA5303FBA4E3CDD162</string>
+				<string>BB7D1F91B955D28B80C007D325888ED4</string>
+				<string>A20E65EC1EE7FF6A646AB7DA6B43E3E0</string>
+				<string>E69BFCFDB880E1D7CC1A8243B6744EB3</string>
+				<string>CF7B0540A39DF5BFCA2B9707C1B0B5C6</string>
+				<string>659245501CFF412AF84B7B3EB97A4559</string>
+				<string>851FB61D371F99D3BBB4F3E8E430CD79</string>
+				<string>DD382C49649D69827D60305BA17CBE3F</string>
+				<string>87D2974B01C442BCC3E149C6E49ED6E9</string>
+				<string>F3D83EFF64E66969C62DF5B0419097B5</string>
+				<string>9F3153D1AD2CB1832DC7FBFE04AE6CD8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F61ED00223F2CEFA004A9E8E118277F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>workbook.c</string>
+			<key>path</key>
+			<string>src/workbook.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F72D0B409BCE8A6FD638DDC6C246E71A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6557F6806507062C18BAA821AEA2E4F6</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8682DBA5012CC11A8CB49036AEDFBB57</string>
+				<string>720853C2F7B7456ABD0AA739912BBFC9</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>8ED174101A50B082B3EF0678AFABBED9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverterTests</string>
+			<key>productName</key>
+			<string>Pods-FauxPasReportConverterTests</string>
+			<key>productReference</key>
+			<string>2F0DCFD3901D16C331FAD3171752EAAE</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>F8C1EED9AE5951E43AE5D96DB2D877F3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>relationships.h</string>
+			<key>path</key>
+			<string>include/xlsxwriter/relationships.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA58719904BA95E2609FD061992A0494</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterUITests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA7BC8E6A87424F14B4A77326606FBFA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>liblibxlsxwriter.a</string>
+			<key>path</key>
+			<string>liblibxlsxwriter.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FB941401096D51792053C67B4836326A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-FauxPasReportConverterUITests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

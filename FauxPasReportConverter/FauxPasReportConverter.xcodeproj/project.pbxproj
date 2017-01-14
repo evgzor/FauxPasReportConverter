@@ -1,863 +1,2060 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		49BD65D1499495B08D0E7050 /* libPods-FauxPasReportConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5F36E5F818F99DB16C0F19 /* libPods-FauxPasReportConverter.a */; };
-		F06B6D8A1D2B896E00451831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B6D891D2B896E00451831 /* AppDelegate.swift */; };
-		F06B6D8C1D2B896E00451831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B6D8B1D2B896E00451831 /* ViewController.swift */; };
-		F06B6D8E1D2B896E00451831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06B6D8D1D2B896E00451831 /* Assets.xcassets */; };
-		F06B6D911D2B896E00451831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06B6D8F1D2B896E00451831 /* Main.storyboard */; };
-		F06B6D9C1D2B896E00451831 /* FauxPasReportConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B6D9B1D2B896E00451831 /* FauxPasReportConverterTests.swift */; };
-		F06B6DA71D2B896E00451831 /* FauxPasReportConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B6DA61D2B896E00451831 /* FauxPasReportConverterUITests.swift */; };
-		F06B6DB51D2B8F7C00451831 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; };
-		F06B6DB61D2B8F7C00451831 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; };
-		F06B6DB71D2B8F7C00451831 /* LibXL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; };
-		F06B6DBA1D2B902800451831 /* LibXL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F06B6DB41D2B8F7C00451831 /* LibXL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F09FA4CC1E1C318F008D3B19 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */; };
-		F09FA4CD1E1C318F008D3B19 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */; };
-		F09FA4CE1E1C318F008D3B19 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */; };
-		F09FA4CF1E1C318F008D3B19 /* EndClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C71E1C318F008D3B19 /* EndClass.swift */; };
-		F09FA4D01E1C318F008D3B19 /* EndClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C71E1C318F008D3B19 /* EndClass.swift */; };
-		F09FA4D11E1C318F008D3B19 /* EndClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C71E1C318F008D3B19 /* EndClass.swift */; };
-		F09FA4D21E1C318F008D3B19 /* Extent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C81E1C318F008D3B19 /* Extent.swift */; };
-		F09FA4D31E1C318F008D3B19 /* Extent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C81E1C318F008D3B19 /* Extent.swift */; };
-		F09FA4D41E1C318F008D3B19 /* Extent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C81E1C318F008D3B19 /* Extent.swift */; };
-		F09FA4D51E1C318F008D3B19 /* Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C91E1C318F008D3B19 /* Html.swift */; };
-		F09FA4D61E1C318F008D3B19 /* Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C91E1C318F008D3B19 /* Html.swift */; };
-		F09FA4D71E1C318F008D3B19 /* Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4C91E1C318F008D3B19 /* Html.swift */; };
-		F09FA4D81E1C318F008D3B19 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */; };
-		F09FA4D91E1C318F008D3B19 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */; };
-		F09FA4DA1E1C318F008D3B19 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */; };
-		F09FA4DB1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
-		F09FA4DC1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
-		F09FA4DD1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
-		F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B11D2CD33700734490 /* LibXlpage.swift */; };
-		F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */; };
-		F0E500B61D2CDFC500734490 /* StringToPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B51D2CDFC500734490 /* StringToPath.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F06B6D981D2B896E00451831 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F06B6D7E1D2B896E00451831 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F06B6D851D2B896E00451831;
-			remoteInfo = FauxPasReportConverter;
-		};
-		F06B6DA31D2B896E00451831 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F06B6D7E1D2B896E00451831 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F06B6D851D2B896E00451831;
-			remoteInfo = FauxPasReportConverter;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F06B6DB91D2B900E00451831 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F06B6DBA1D2B902800451831 /* LibXL.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		65CD429154BDB8A975568ED3 /* Pods-FauxPasReportConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FauxPasReportConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter.release.xcconfig"; sourceTree = "<group>"; };
-		86D57EFBEC7805C750B3D22C /* Pods-FauxPasReportConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FauxPasReportConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter.debug.xcconfig"; sourceTree = "<group>"; };
-		AB5F36E5F818F99DB16C0F19 /* libPods-FauxPasReportConverter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FauxPasReportConverter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F06B6D861D2B896E00451831 /* FauxPasReportConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FauxPasReportConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F06B6D891D2B896E00451831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F06B6D8B1D2B896E00451831 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F06B6D8D1D2B896E00451831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F06B6D901D2B896E00451831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F06B6D921D2B896E00451831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F06B6D971D2B896E00451831 /* FauxPasReportConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FauxPasReportConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F06B6D9B1D2B896E00451831 /* FauxPasReportConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxPasReportConverterTests.swift; sourceTree = "<group>"; };
-		F06B6D9D1D2B896E00451831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F06B6DA21D2B896E00451831 /* FauxPasReportConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FauxPasReportConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F06B6DA61D2B896E00451831 /* FauxPasReportConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxPasReportConverterUITests.swift; sourceTree = "<group>"; };
-		F06B6DA81D2B896E00451831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F06B6DB41D2B8F7C00451831 /* LibXL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LibXL.framework; path = FrameWorks/LibXL.framework; sourceTree = "<group>"; };
-		F06B6DBB1D2B914100451831 /* FauxPasReportConverter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverter-Bridging-Header.h"; sourceTree = "<group>"; };
-		F06B6DBC1D2B914100451831 /* FauxPasReportConverterTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverterTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		F06B6DBD1D2B914100451831 /* FauxPasReportConverterUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FauxPasReportConverterUITests-Bridging-Header.h"; sourceTree = "<group>"; };
-		F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diagnostics.swift; sourceTree = "<group>"; };
-		F09FA4C71E1C318F008D3B19 /* EndClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndClass.swift; sourceTree = "<group>"; };
-		F09FA4C81E1C318F008D3B19 /* Extent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extent.swift; sourceTree = "<group>"; };
-		F09FA4C91E1C318F008D3B19 /* Html.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Html.swift; sourceTree = "<group>"; };
-		F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
-		F09FA4CB1E1C318F008D3B19 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
-		F0E500B11D2CD33700734490 /* LibXlpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibXlpage.swift; path = ExcelSheet/LibXlpage.swift; sourceTree = "<group>"; };
-		F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibxlwriterPage.swift; path = ExcelSheet/LibxlwriterPage.swift; sourceTree = "<group>"; };
-		F0E500B51D2CDFC500734490 /* StringToPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToPath.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		F06B6D831D2B896E00451831 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F06B6DB51D2B8F7C00451831 /* LibXL.framework in Frameworks */,
-				49BD65D1499495B08D0E7050 /* libPods-FauxPasReportConverter.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F06B6D941D2B896E00451831 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F06B6DB61D2B8F7C00451831 /* LibXL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F06B6D9F1D2B896E00451831 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F06B6DB71D2B8F7C00451831 /* LibXL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		2CBA4A527774D24C7C724B72 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				86D57EFBEC7805C750B3D22C /* Pods-FauxPasReportConverter.debug.xcconfig */,
-				65CD429154BDB8A975568ED3 /* Pods-FauxPasReportConverter.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F06B6D7D1D2B896E00451831 = {
-			isa = PBXGroup;
-			children = (
-				F06B6D881D2B896E00451831 /* FauxPasReportConverter */,
-				F06B6D9A1D2B896E00451831 /* FauxPasReportConverterTests */,
-				F06B6DA51D2B896E00451831 /* FauxPasReportConverterUITests */,
-				F06B6D871D2B896E00451831 /* Products */,
-				2CBA4A527774D24C7C724B72 /* Pods */,
-				FFFF604EA9540E67FE44C11B /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		F06B6D871D2B896E00451831 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F06B6D861D2B896E00451831 /* FauxPasReportConverter.app */,
-				F06B6D971D2B896E00451831 /* FauxPasReportConverterTests.xctest */,
-				F06B6DA21D2B896E00451831 /* FauxPasReportConverterUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F06B6D881D2B896E00451831 /* FauxPasReportConverter */ = {
-			isa = PBXGroup;
-			children = (
-				F09FA4C51E1C318F008D3B19 /* ReportModel */,
-				F0E500B01D2CD2D000734490 /* Excel Sheet */,
-				F06B6D891D2B896E00451831 /* AppDelegate.swift */,
-				F06B6D8B1D2B896E00451831 /* ViewController.swift */,
-				F0E500B51D2CDFC500734490 /* StringToPath.swift */,
-				F06B6D8D1D2B896E00451831 /* Assets.xcassets */,
-				F06B6D8F1D2B896E00451831 /* Main.storyboard */,
-				F06B6D921D2B896E00451831 /* Info.plist */,
-				F06B6DB81D2B8F8300451831 /* FrameWorks */,
-				F06B6DBB1D2B914100451831 /* FauxPasReportConverter-Bridging-Header.h */,
-				F06B6DBC1D2B914100451831 /* FauxPasReportConverterTests-Bridging-Header.h */,
-				F06B6DBD1D2B914100451831 /* FauxPasReportConverterUITests-Bridging-Header.h */,
-			);
-			path = FauxPasReportConverter;
-			sourceTree = "<group>";
-		};
-		F06B6D9A1D2B896E00451831 /* FauxPasReportConverterTests */ = {
-			isa = PBXGroup;
-			children = (
-				F06B6D9B1D2B896E00451831 /* FauxPasReportConverterTests.swift */,
-				F06B6D9D1D2B896E00451831 /* Info.plist */,
-			);
-			path = FauxPasReportConverterTests;
-			sourceTree = "<group>";
-		};
-		F06B6DA51D2B896E00451831 /* FauxPasReportConverterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F06B6DA61D2B896E00451831 /* FauxPasReportConverterUITests.swift */,
-				F06B6DA81D2B896E00451831 /* Info.plist */,
-			);
-			path = FauxPasReportConverterUITests;
-			sourceTree = "<group>";
-		};
-		F06B6DB81D2B8F8300451831 /* FrameWorks */ = {
-			isa = PBXGroup;
-			children = (
-				F06B6DB41D2B8F7C00451831 /* LibXL.framework */,
-			);
-			name = FrameWorks;
-			sourceTree = "<group>";
-		};
-		F09FA4C51E1C318F008D3B19 /* ReportModel */ = {
-			isa = PBXGroup;
-			children = (
-				F09FA4C61E1C318F008D3B19 /* Diagnostics.swift */,
-				F09FA4C71E1C318F008D3B19 /* EndClass.swift */,
-				F09FA4C81E1C318F008D3B19 /* Extent.swift */,
-				F09FA4C91E1C318F008D3B19 /* Html.swift */,
-				F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */,
-				F09FA4CB1E1C318F008D3B19 /* Start.swift */,
-			);
-			name = ReportModel;
-			path = fauxpasreportconverter/ReportModel;
-			sourceTree = SOURCE_ROOT;
-		};
-		F0E500B01D2CD2D000734490 /* Excel Sheet */ = {
-			isa = PBXGroup;
-			children = (
-				F0E500B11D2CD33700734490 /* LibXlpage.swift */,
-				F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */,
-			);
-			name = "Excel Sheet";
-			sourceTree = "<group>";
-		};
-		FFFF604EA9540E67FE44C11B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AB5F36E5F818F99DB16C0F19 /* libPods-FauxPasReportConverter.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		F06B6D851D2B896E00451831 /* FauxPasReportConverter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F06B6DAB1D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverter" */;
-			buildPhases = (
-				AE9DD00D303DB4EBA6C3E9E0 /* [CP] Check Pods Manifest.lock */,
-				F06B6D821D2B896E00451831 /* Sources */,
-				F06B6D831D2B896E00451831 /* Frameworks */,
-				F06B6D841D2B896E00451831 /* Resources */,
-				F06B6DB91D2B900E00451831 /* CopyFiles */,
-				7F1E7EAA709957F8ABD5412D /* [CP] Embed Pods Frameworks */,
-				4502C6FAC78FD719B81886F9 /* [CP] Copy Pods Resources */,
-				F0E2CA7D1E1A72F0009B9943 /* Tailor */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FauxPasReportConverter;
-			productName = FauxPasReportConverter;
-			productReference = F06B6D861D2B896E00451831 /* FauxPasReportConverter.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F06B6D961D2B896E00451831 /* FauxPasReportConverterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F06B6DAE1D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverterTests" */;
-			buildPhases = (
-				A2735E426BD8DB4B67741E9F /* [CP] Check Pods Manifest.lock */,
-				F06B6D931D2B896E00451831 /* Sources */,
-				F06B6D941D2B896E00451831 /* Frameworks */,
-				F06B6D951D2B896E00451831 /* Resources */,
-				726430D1DF131F159836C481 /* [CP] Embed Pods Frameworks */,
-				84CC9E8442D9F6AA0A7EBDC6 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F06B6D991D2B896E00451831 /* PBXTargetDependency */,
-			);
-			name = FauxPasReportConverterTests;
-			productName = FauxPasReportConverterTests;
-			productReference = F06B6D971D2B896E00451831 /* FauxPasReportConverterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F06B6DA11D2B896E00451831 /* FauxPasReportConverterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F06B6DB11D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverterUITests" */;
-			buildPhases = (
-				3BF148F38EFDBAFC130D5AA3 /* [CP] Check Pods Manifest.lock */,
-				F06B6D9E1D2B896E00451831 /* Sources */,
-				F06B6D9F1D2B896E00451831 /* Frameworks */,
-				F06B6DA01D2B896E00451831 /* Resources */,
-				CFDB023960D2790A4B037EE9 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F06B6DA41D2B896E00451831 /* PBXTargetDependency */,
-			);
-			name = FauxPasReportConverterUITests;
-			productName = FauxPasReportConverterUITests;
-			productReference = F06B6DA21D2B896E00451831 /* FauxPasReportConverterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		F06B6D7E1D2B896E00451831 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Eugene Zorin";
-				TargetAttributes = {
-					F06B6D851D2B896E00451831 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0820;
-					};
-					F06B6D961D2B896E00451831 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = F06B6D851D2B896E00451831;
-					};
-					F06B6DA11D2B896E00451831 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = F06B6D851D2B896E00451831;
-					};
-				};
-			};
-			buildConfigurationList = F06B6D811D2B896E00451831 /* Build configuration list for PBXProject "FauxPasReportConverter" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = F06B6D7D1D2B896E00451831;
-			productRefGroup = F06B6D871D2B896E00451831 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F06B6D851D2B896E00451831 /* FauxPasReportConverter */,
-				F06B6D961D2B896E00451831 /* FauxPasReportConverterTests */,
-				F06B6DA11D2B896E00451831 /* FauxPasReportConverterUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		F06B6D841D2B896E00451831 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F06B6D8E1D2B896E00451831 /* Assets.xcassets in Resources */,
-				F06B6D911D2B896E00451831 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F06B6D951D2B896E00451831 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F06B6DA01D2B896E00451831 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3BF148F38EFDBAFC130D5AA3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4502C6FAC78FD719B81886F9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		726430D1DF131F159836C481 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterTests/Pods-FauxPasReportConverterTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F1E7EAA709957F8ABD5412D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		84CC9E8442D9F6AA0A7EBDC6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterTests/Pods-FauxPasReportConverterTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2735E426BD8DB4B67741E9F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AE9DD00D303DB4EBA6C3E9E0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CFDB023960D2790A4B037EE9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterUITests/Pods-FauxPasReportConverterUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0E2CA7D1E1A72F0009B9943 /* Tailor */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Tailor;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if hash tailor 2>/dev/null; then\ntailor\nelse\necho \"warning: Please install Tailor from https://tailor.sh\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		F06B6D821D2B896E00451831 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */,
-				F09FA4DB1E1C318F008D3B19 /* Start.swift in Sources */,
-				F09FA4CF1E1C318F008D3B19 /* EndClass.swift in Sources */,
-				F0E500B61D2CDFC500734490 /* StringToPath.swift in Sources */,
-				F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */,
-				F06B6D8C1D2B896E00451831 /* ViewController.swift in Sources */,
-				F09FA4CC1E1C318F008D3B19 /* Diagnostics.swift in Sources */,
-				F09FA4D51E1C318F008D3B19 /* Html.swift in Sources */,
-				F09FA4D81E1C318F008D3B19 /* ReportModel.swift in Sources */,
-				F06B6D8A1D2B896E00451831 /* AppDelegate.swift in Sources */,
-				F09FA4D21E1C318F008D3B19 /* Extent.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F06B6D931D2B896E00451831 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F09FA4D61E1C318F008D3B19 /* Html.swift in Sources */,
-				F09FA4CD1E1C318F008D3B19 /* Diagnostics.swift in Sources */,
-				F09FA4DC1E1C318F008D3B19 /* Start.swift in Sources */,
-				F09FA4D01E1C318F008D3B19 /* EndClass.swift in Sources */,
-				F09FA4D91E1C318F008D3B19 /* ReportModel.swift in Sources */,
-				F06B6D9C1D2B896E00451831 /* FauxPasReportConverterTests.swift in Sources */,
-				F09FA4D31E1C318F008D3B19 /* Extent.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F06B6D9E1D2B896E00451831 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F09FA4D71E1C318F008D3B19 /* Html.swift in Sources */,
-				F09FA4CE1E1C318F008D3B19 /* Diagnostics.swift in Sources */,
-				F09FA4DD1E1C318F008D3B19 /* Start.swift in Sources */,
-				F09FA4D11E1C318F008D3B19 /* EndClass.swift in Sources */,
-				F09FA4DA1E1C318F008D3B19 /* ReportModel.swift in Sources */,
-				F06B6DA71D2B896E00451831 /* FauxPasReportConverterUITests.swift in Sources */,
-				F09FA4D41E1C318F008D3B19 /* Extent.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F06B6D991D2B896E00451831 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F06B6D851D2B896E00451831 /* FauxPasReportConverter */;
-			targetProxy = F06B6D981D2B896E00451831 /* PBXContainerItemProxy */;
-		};
-		F06B6DA41D2B896E00451831 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F06B6D851D2B896E00451831 /* FauxPasReportConverter */;
-			targetProxy = F06B6DA31D2B896E00451831 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F06B6D8F1D2B896E00451831 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F06B6D901D2B896E00451831 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		F06B6DA91D2B896E00451831 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		F06B6DAA1D2B896E00451831 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-			};
-			name = Release;
-		};
-		F06B6DAC1D2B896E00451831 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86D57EFBEC7805C750B3D22C /* Pods-FauxPasReportConverter.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-				);
-				INFOPLIST_FILE = FauxPasReportConverter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/**";
-				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverter-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) \"${PODS_ROOT}/Headers/Public\"/**";
-			};
-			name = Debug;
-		};
-		F06B6DAD1D2B896E00451831 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65CD429154BDB8A975568ED3 /* Pods-FauxPasReportConverter.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-				);
-				INFOPLIST_FILE = FauxPasReportConverter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/**";
-				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverter-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) \"${PODS_ROOT}/Headers/Public\"/**";
-			};
-			name = Release;
-		};
-		F06B6DAF1D2B896E00451831 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
-				);
-				INFOPLIST_FILE = FauxPasReportConverterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FauxPasReportConverter.app/Contents/MacOS/FauxPasReportConverter";
-			};
-			name = Debug;
-		};
-		F06B6DB01D2B896E00451831 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
-				);
-				INFOPLIST_FILE = FauxPasReportConverterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterTests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FauxPasReportConverter.app/Contents/MacOS/FauxPasReportConverter";
-			};
-			name = Release;
-		};
-		F06B6DB21D2B896E00451831 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
-				);
-				INFOPLIST_FILE = FauxPasReportConverterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterUITests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = FauxPasReportConverter;
-			};
-			name = Debug;
-		};
-		F06B6DB31D2B896E00451831 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
-				);
-				INFOPLIST_FILE = FauxPasReportConverterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zorin.FauxPasReportConverterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FauxPasReportConverter/FauxPasReportConverterUITests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = FauxPasReportConverter;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		F06B6D811D2B896E00451831 /* Build configuration list for PBXProject "FauxPasReportConverter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F06B6DA91D2B896E00451831 /* Debug */,
-				F06B6DAA1D2B896E00451831 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F06B6DAB1D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F06B6DAC1D2B896E00451831 /* Debug */,
-				F06B6DAD1D2B896E00451831 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F06B6DAE1D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F06B6DAF1D2B896E00451831 /* Debug */,
-				F06B6DB01D2B896E00451831 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F06B6DB11D2B896E00451831 /* Build configuration list for PBXNativeTarget "FauxPasReportConverterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F06B6DB21D2B896E00451831 /* Debug */,
-				F06B6DB31D2B896E00451831 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = F06B6D7E1D2B896E00451831 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>2CBA4A527774D24C7C724B72</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>86D57EFBEC7805C750B3D22C</string>
+				<string>65CD429154BDB8A975568ED3</string>
+				<string>864BBFA51AA4910E677F99DB</string>
+				<string>B9CF3FF0295376500EEA4958</string>
+				<string>43D49694C1A8FC9396846258</string>
+				<string>844989DFBAB8A2D4B2AF6D40</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BF148F38EFDBAFC130D5AA3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>43D49694C1A8FC9396846258</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverterUITests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FauxPasReportConverterUITests/Pods-FauxPasReportConverterUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4502C6FAC78FD719B81886F9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>49BD65D1499495B08D0E7050</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AB5F36E5F818F99DB16C0F19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>65CD429154BDB8A975568ED3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverter.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>726430D1DF131F159836C481</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterTests/Pods-FauxPasReportConverterTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7F1E7EAA709957F8ABD5412D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>82EB30E2D75A24486DF32B98</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-FauxPasReportConverterTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>844989DFBAB8A2D4B2AF6D40</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverterUITests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FauxPasReportConverterUITests/Pods-FauxPasReportConverterUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84CC9E8442D9F6AA0A7EBDC6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterTests/Pods-FauxPasReportConverterTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>864BBFA51AA4910E677F99DB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverterTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FauxPasReportConverterTests/Pods-FauxPasReportConverterTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86D57EFBEC7805C750B3D22C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverter.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FauxPasReportConverter/Pods-FauxPasReportConverter.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A2735E426BD8DB4B67741E9F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>AB5F36E5F818F99DB16C0F19</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-FauxPasReportConverter.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AE9DD00D303DB4EBA6C3E9E0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B03A1A2C3544BF084DFEE79B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-FauxPasReportConverterUITests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B9CF3FF0295376500EEA4958</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FauxPasReportConverterTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FauxPasReportConverterTests/Pods-FauxPasReportConverterTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEF923FB0AC87077B866223B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82EB30E2D75A24486DF32B98</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CFDB023960D2790A4B037EE9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FauxPasReportConverterUITests/Pods-FauxPasReportConverterUITests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DEDA0A4BA6AA8443DEB5CD30</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B03A1A2C3544BF084DFEE79B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F037EFA91E1F9A86001768F5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F037EFAA1E1F9AAC001768F5</string>
+				<string>F06B6D8D1D2B896E00451831</string>
+				<string>F06B6D8F1D2B896E00451831</string>
+				<string>F06B6D921D2B896E00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resorces</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F037EFAA1E1F9AAC001768F5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>name</key>
+			<string>fauxPas.json</string>
+			<key>path</key>
+			<string>fauxpasreportconverter/fauxPas.json</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>F037EFAB1E1F9AAC001768F5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F037EFAA1E1F9AAC001768F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F037EFAC1E1F9AAC001768F5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F037EFAA1E1F9AAC001768F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F037EFAD1E1F9AAC001768F5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F037EFAA1E1F9AAC001768F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F037EFAE1E1FFB7C001768F5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NSDateExtension.swift</string>
+			<key>path</key>
+			<string>../fauxpasreportconverter/ReportModel/NSDateExtension.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F037EFAF1E1FFB7C001768F5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F037EFAE1E1FFB7C001768F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F037EFB01E1FFB7C001768F5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F037EFAE1E1FFB7C001768F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F037EFB11E1FFB7C001768F5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F037EFAE1E1FFB7C001768F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F037EFB21E20066A001768F5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F0E500B51D2CDFC500734490</string>
+				<string>F037EFAE1E1FFB7C001768F5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Helpers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D7D1D2B896E00451831</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F06B6D881D2B896E00451831</string>
+				<string>F06B6D9A1D2B896E00451831</string>
+				<string>F06B6DA51D2B896E00451831</string>
+				<string>F06B6D871D2B896E00451831</string>
+				<string>2CBA4A527774D24C7C724B72</string>
+				<string>FFFF604EA9540E67FE44C11B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D7E1D2B896E00451831</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0820</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Eugene Zorin</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>F06B6D851D2B896E00451831</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>LastSwiftMigration</key>
+						<string>0820</string>
+					</dict>
+					<key>F06B6D961D2B896E00451831</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>LastSwiftMigration</key>
+						<string>0820</string>
+						<key>TestTargetID</key>
+						<string>F06B6D851D2B896E00451831</string>
+					</dict>
+					<key>F06B6DA11D2B896E00451831</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>LastSwiftMigration</key>
+						<string>0820</string>
+						<key>TestTargetID</key>
+						<string>F06B6D851D2B896E00451831</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>F06B6D811D2B896E00451831</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>F06B6D7D1D2B896E00451831</string>
+			<key>productRefGroup</key>
+			<string>F06B6D871D2B896E00451831</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>F06B6D851D2B896E00451831</string>
+				<string>F06B6D961D2B896E00451831</string>
+				<string>F06B6DA11D2B896E00451831</string>
+			</array>
+		</dict>
+		<key>F06B6D811D2B896E00451831</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F06B6DA91D2B896E00451831</string>
+				<string>F06B6DAA1D2B896E00451831</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F06B6D821D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F037EFAF1E1FFB7C001768F5</string>
+				<string>F0E500B21D2CD33700734490</string>
+				<string>F09FA4DB1E1C318F008D3B19</string>
+				<string>F09FA4CF1E1C318F008D3B19</string>
+				<string>F0E500B61D2CDFC500734490</string>
+				<string>F0E500B41D2CD7F000734490</string>
+				<string>F06B6D8C1D2B896E00451831</string>
+				<string>F09FA4CC1E1C318F008D3B19</string>
+				<string>F09FA4D51E1C318F008D3B19</string>
+				<string>F09FA4D81E1C318F008D3B19</string>
+				<string>F06B6D8A1D2B896E00451831</string>
+				<string>F09FA4D21E1C318F008D3B19</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6D831D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F06B6DB51D2B8F7C00451831</string>
+				<string>49BD65D1499495B08D0E7050</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6D841D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F037EFAB1E1F9AAC001768F5</string>
+				<string>F06B6D8E1D2B896E00451831</string>
+				<string>F06B6D911D2B896E00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6D851D2B896E00451831</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F06B6DAB1D2B896E00451831</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AE9DD00D303DB4EBA6C3E9E0</string>
+				<string>F06B6D821D2B896E00451831</string>
+				<string>F06B6D831D2B896E00451831</string>
+				<string>F06B6D841D2B896E00451831</string>
+				<string>F06B6DB91D2B900E00451831</string>
+				<string>7F1E7EAA709957F8ABD5412D</string>
+				<string>4502C6FAC78FD719B81886F9</string>
+				<string>F0E2CA7D1E1A72F0009B9943</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FauxPasReportConverter</string>
+			<key>productName</key>
+			<string>FauxPasReportConverter</string>
+			<key>productReference</key>
+			<string>F06B6D861D2B896E00451831</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>F06B6D861D2B896E00451831</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FauxPasReportConverter.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F06B6D871D2B896E00451831</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F06B6D861D2B896E00451831</string>
+				<string>F06B6D971D2B896E00451831</string>
+				<string>F06B6DA21D2B896E00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D881D2B896E00451831</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F037EFB21E20066A001768F5</string>
+				<string>F09FA4C51E1C318F008D3B19</string>
+				<string>F0E500B01D2CD2D000734490</string>
+				<string>F06B6D891D2B896E00451831</string>
+				<string>F06B6D8B1D2B896E00451831</string>
+				<string>F037EFA91E1F9A86001768F5</string>
+				<string>F06B6DB81D2B8F8300451831</string>
+				<string>F06B6DBB1D2B914100451831</string>
+				<string>F06B6DBC1D2B914100451831</string>
+				<string>F06B6DBD1D2B914100451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FauxPasReportConverter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D891D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D8A1D2B896E00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6D891D2B896E00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6D8B1D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D8C1D2B896E00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6D8B1D2B896E00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6D8D1D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D8E1D2B896E00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6D8D1D2B896E00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6D8F1D2B896E00451831</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F06B6D901D2B896E00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D901D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D911D2B896E00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6D8F1D2B896E00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6D921D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D931D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F09FA4D61E1C318F008D3B19</string>
+				<string>F09FA4CD1E1C318F008D3B19</string>
+				<string>F09FA4DC1E1C318F008D3B19</string>
+				<string>F09FA4D01E1C318F008D3B19</string>
+				<string>F037EFB01E1FFB7C001768F5</string>
+				<string>F09FA4D91E1C318F008D3B19</string>
+				<string>F06B6D9C1D2B896E00451831</string>
+				<string>F09FA4D31E1C318F008D3B19</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6D941D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F06B6DB61D2B8F7C00451831</string>
+				<string>BEF923FB0AC87077B866223B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6D951D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F037EFAC1E1F9AAC001768F5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6D961D2B896E00451831</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F06B6DAE1D2B896E00451831</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A2735E426BD8DB4B67741E9F</string>
+				<string>F06B6D931D2B896E00451831</string>
+				<string>F06B6D941D2B896E00451831</string>
+				<string>F06B6D951D2B896E00451831</string>
+				<string>726430D1DF131F159836C481</string>
+				<string>84CC9E8442D9F6AA0A7EBDC6</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F06B6D991D2B896E00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FauxPasReportConverterTests</string>
+			<key>productName</key>
+			<string>FauxPasReportConverterTests</string>
+			<key>productReference</key>
+			<string>F06B6D971D2B896E00451831</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>F06B6D971D2B896E00451831</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FauxPasReportConverterTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F06B6D981D2B896E00451831</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>F06B6D7E1D2B896E00451831</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F06B6D851D2B896E00451831</string>
+			<key>remoteInfo</key>
+			<string>FauxPasReportConverter</string>
+		</dict>
+		<key>F06B6D991D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>F06B6D851D2B896E00451831</string>
+			<key>targetProxy</key>
+			<string>F06B6D981D2B896E00451831</string>
+		</dict>
+		<key>F06B6D9A1D2B896E00451831</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F06B6D9B1D2B896E00451831</string>
+				<string>F06B6D9D1D2B896E00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FauxPasReportConverterTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D9B1D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>FauxPasReportConverterTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D9C1D2B896E00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6D9B1D2B896E00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6D9D1D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6D9E1D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F09FA4D71E1C318F008D3B19</string>
+				<string>F09FA4CE1E1C318F008D3B19</string>
+				<string>F09FA4DD1E1C318F008D3B19</string>
+				<string>F09FA4D11E1C318F008D3B19</string>
+				<string>F037EFB11E1FFB7C001768F5</string>
+				<string>F09FA4DA1E1C318F008D3B19</string>
+				<string>F06B6DA71D2B896E00451831</string>
+				<string>F09FA4D41E1C318F008D3B19</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6D9F1D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F06B6DB71D2B8F7C00451831</string>
+				<string>DEDA0A4BA6AA8443DEB5CD30</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6DA01D2B896E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F037EFAD1E1F9AAC001768F5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6DA11D2B896E00451831</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F06B6DB11D2B896E00451831</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3BF148F38EFDBAFC130D5AA3</string>
+				<string>F06B6D9E1D2B896E00451831</string>
+				<string>F06B6D9F1D2B896E00451831</string>
+				<string>F06B6DA01D2B896E00451831</string>
+				<string>CFDB023960D2790A4B037EE9</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F06B6DA41D2B896E00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FauxPasReportConverterUITests</string>
+			<key>productName</key>
+			<string>FauxPasReportConverterUITests</string>
+			<key>productReference</key>
+			<string>F06B6DA21D2B896E00451831</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>F06B6DA21D2B896E00451831</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FauxPasReportConverterUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F06B6DA31D2B896E00451831</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>F06B6D7E1D2B896E00451831</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F06B6D851D2B896E00451831</string>
+			<key>remoteInfo</key>
+			<string>FauxPasReportConverter</string>
+		</dict>
+		<key>F06B6DA41D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>F06B6D851D2B896E00451831</string>
+			<key>targetProxy</key>
+			<string>F06B6DA31D2B896E00451831</string>
+		</dict>
+		<key>F06B6DA51D2B896E00451831</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F06B6DA61D2B896E00451831</string>
+				<string>F06B6DA81D2B896E00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FauxPasReportConverterUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6DA61D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>FauxPasReportConverterUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6DA71D2B896E00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6DA61D2B896E00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6DA81D2B896E00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6DA91D2B896E00451831</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.11</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F06B6DAA1D2B896E00451831</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.11</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Owholemodule</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F06B6DAB1D2B896E00451831</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F06B6DAC1D2B896E00451831</string>
+				<string>F06B6DAD1D2B896E00451831</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F06B6DAC1D2B896E00451831</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>86D57EFBEC7805C750B3D22C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/**</string>
+				</array>
+				<key>HEADER_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/**</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FauxPasReportConverter/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)</string>
+				</array>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>$(inherited)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>Zorin.FauxPasReportConverter</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_INCLUDE_PATHS</key>
+				<string>$(PROJECT_DIR)/**</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>FauxPasReportConverter/FauxPasReportConverter-Bridging-Header.h</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>USER_HEADER_SEARCH_PATHS</key>
+				<string>$(inherited) "${PODS_ROOT}/Headers/Public"/**</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F06B6DAD1D2B896E00451831</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>65CD429154BDB8A975568ED3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/**</string>
+				</array>
+				<key>HEADER_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/**</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FauxPasReportConverter/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string>$(inherited)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>Zorin.FauxPasReportConverter</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_INCLUDE_PATHS</key>
+				<string>$(PROJECT_DIR)/**</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>FauxPasReportConverter/FauxPasReportConverter-Bridging-Header.h</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>USER_HEADER_SEARCH_PATHS</key>
+				<string>$(inherited) "${PODS_ROOT}/Headers/Public"/**</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F06B6DAE1D2B896E00451831</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F06B6DAF1D2B896E00451831</string>
+				<string>F06B6DB01D2B896E00451831</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F06B6DAF1D2B896E00451831</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>864BBFA51AA4910E677F99DB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FauxPasReportConverterTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>Zorin.FauxPasReportConverterTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>FauxPasReportConverter/FauxPasReportConverterTests-Bridging-Header.h</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FauxPasReportConverter.app/Contents/MacOS/FauxPasReportConverter</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F06B6DB01D2B896E00451831</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B9CF3FF0295376500EEA4958</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FauxPasReportConverterTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>Zorin.FauxPasReportConverterTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>FauxPasReportConverter/FauxPasReportConverterTests-Bridging-Header.h</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FauxPasReportConverter.app/Contents/MacOS/FauxPasReportConverter</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F06B6DB11D2B896E00451831</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F06B6DB21D2B896E00451831</string>
+				<string>F06B6DB31D2B896E00451831</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F06B6DB21D2B896E00451831</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>43D49694C1A8FC9396846258</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FauxPasReportConverterUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>Zorin.FauxPasReportConverterUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>FauxPasReportConverter/FauxPasReportConverterUITests-Bridging-Header.h</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>FauxPasReportConverter</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F06B6DB31D2B896E00451831</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>844989DFBAB8A2D4B2AF6D40</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FauxPasReportConverterUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>Zorin.FauxPasReportConverterUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>FauxPasReportConverter/FauxPasReportConverterUITests-Bridging-Header.h</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>FauxPasReportConverter</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F06B6DB41D2B8F7C00451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>LibXL.framework</string>
+			<key>path</key>
+			<string>FrameWorks/LibXL.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6DB51D2B8F7C00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6DB41D2B8F7C00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6DB61D2B8F7C00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6DB41D2B8F7C00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6DB71D2B8F7C00451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6DB41D2B8F7C00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F06B6DB81D2B8F8300451831</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F06B6DB41D2B8F7C00451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FrameWorks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6DB91D2B900E00451831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string></string>
+			<key>dstSubfolderSpec</key>
+			<string>10</string>
+			<key>files</key>
+			<array>
+				<string>F06B6DBA1D2B902800451831</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F06B6DBA1D2B902800451831</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06B6DB41D2B8F7C00451831</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>CodeSignOnCopy</string>
+					<string>RemoveHeadersOnCopy</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F06B6DBB1D2B914100451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FauxPasReportConverter-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6DBC1D2B914100451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FauxPasReportConverterTests-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06B6DBD1D2B914100451831</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FauxPasReportConverterUITests-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F09FA4C51E1C318F008D3B19</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F09FA4C61E1C318F008D3B19</string>
+				<string>F09FA4C71E1C318F008D3B19</string>
+				<string>F09FA4C81E1C318F008D3B19</string>
+				<string>F09FA4C91E1C318F008D3B19</string>
+				<string>F09FA4CA1E1C318F008D3B19</string>
+				<string>F09FA4CB1E1C318F008D3B19</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ReportModel</string>
+			<key>path</key>
+			<string>fauxpasreportconverter/ReportModel</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>F09FA4C61E1C318F008D3B19</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Diagnostics.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F09FA4C71E1C318F008D3B19</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EndClass.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F09FA4C81E1C318F008D3B19</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Extent.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F09FA4C91E1C318F008D3B19</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Html.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F09FA4CA1E1C318F008D3B19</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ReportModel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F09FA4CB1E1C318F008D3B19</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Start.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F09FA4CC1E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C61E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4CD1E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C61E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4CE1E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C61E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4CF1E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C71E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D01E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C71E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D11E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C71E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D21E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C81E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D31E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C81E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D41E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C81E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D51E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C91E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D61E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C91E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D71E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4C91E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D81E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4CA1E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4D91E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4CA1E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4DA1E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4CA1E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4DB1E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4CB1E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4DC1E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4CB1E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F09FA4DD1E1C318F008D3B19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F09FA4CB1E1C318F008D3B19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F0E2CA7D1E1A72F0009B9943</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Tailor</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>if which swiftlint &gt;/dev/null; then
+swiftlint
+else
+echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+if hash tailor 2&gt;/dev/null; then
+tailor --except=brace-style,trailing-whitespace
+else
+echo "warning: Please install Tailor from https://tailor.sh"
+fi</string>
+		</dict>
+		<key>F0E500B01D2CD2D000734490</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F0E500B11D2CD33700734490</string>
+				<string>F0E500B31D2CD7F000734490</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Excel Sheet</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0E500B11D2CD33700734490</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LibXlpage.swift</string>
+			<key>path</key>
+			<string>ExcelSheet/LibXlpage.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0E500B21D2CD33700734490</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F0E500B11D2CD33700734490</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F0E500B31D2CD7F000734490</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>LibxlwriterPage.swift</string>
+			<key>path</key>
+			<string>ExcelSheet/LibxlwriterPage.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0E500B41D2CD7F000734490</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F0E500B31D2CD7F000734490</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F0E500B51D2CDFC500734490</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>StringToPath.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0E500B61D2CDFC500734490</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F0E500B51D2CDFC500734490</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFFF604EA9540E67FE44C11B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AB5F36E5F818F99DB16C0F19</string>
+				<string>82EB30E2D75A24486DF32B98</string>
+				<string>B03A1A2C3544BF084DFEE79B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>F06B6D7E1D2B896E00451831</string>
+</dict>
+</plist>
