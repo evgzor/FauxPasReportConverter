@@ -44,10 +44,12 @@
 		F09FA4DB1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
 		F09FA4DC1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
 		F09FA4DD1E1C318F008D3B19 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FA4CB1E1C318F008D3B19 /* Start.swift */; };
-		F0B7ADEA1E2B49A4007610CE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7ADE71E2B49A4007610CE /* ItemCell.swift */; };
-		F0B7ADEB1E2B49A4007610CE /* PreviewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7ADE81E2B49A4007610CE /* PreviewCollectionView.swift */; };
-		F0B7ADEC1E2B49A4007610CE /* DelegateOfPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7ADE91E2B49A4007610CE /* DelegateOfPreview.swift */; };
-		F0B7ADF81E2B5ED7007610CE /* ViewOfItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7ADF71E2B5ED7007610CE /* ViewOfItemCell.swift */; };
+		F0B7ADFE1E2BCFA1007610CE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7ADFD1E2BCFA1007610CE /* ItemCell.swift */; };
+		F0B7AE001E2BCFAE007610CE /* DelegateOfPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7ADFF1E2BCFAE007610CE /* DelegateOfPreview.swift */; };
+		F0B7AE041E2BD0C2007610CE /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0B7AE031E2BD0C2007610CE /* ItemCell.xib */; };
+		F0B7AE061E2BD0D2007610CE /* LayoutPreviewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7AE051E2BD0D2007610CE /* LayoutPreviewCollectionView.swift */; };
+		F0B7AE081E2BD0E3007610CE /* PreviewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7AE071E2BD0E3007610CE /* PreviewCollectionView.swift */; };
+		F0B7AE0A1E2BD0EB007610CE /* ViewOfItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7AE091E2BD0EB007610CE /* ViewOfItemCell.swift */; };
 		F0D4A4721E2A4A98000193DB /* DataSourceOfPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4A4711E2A4A98000193DB /* DataSourceOfPreview.swift */; };
 		F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B11D2CD33700734490 /* LibXlpage.swift */; };
 		F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */; };
@@ -118,10 +120,12 @@
 		F09FA4C91E1C318F008D3B19 /* Html.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Html.swift; sourceTree = "<group>"; };
 		F09FA4CA1E1C318F008D3B19 /* ReportModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
 		F09FA4CB1E1C318F008D3B19 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
-		F0B7ADE71E2B49A4007610CE /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		F0B7ADE81E2B49A4007610CE /* PreviewCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewCollectionView.swift; sourceTree = "<group>"; };
-		F0B7ADE91E2B49A4007610CE /* DelegateOfPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateOfPreview.swift; sourceTree = "<group>"; };
-		F0B7ADF71E2B5ED7007610CE /* ViewOfItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOfItemCell.swift; sourceTree = "<group>"; };
+		F0B7ADFD1E2BCFA1007610CE /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCell.swift; path = fauxpasreportconverter/PreviewData/ItemCell.swift; sourceTree = SOURCE_ROOT; };
+		F0B7ADFF1E2BCFAE007610CE /* DelegateOfPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DelegateOfPreview.swift; path = fauxpasreportconverter/PreviewData/DelegateOfPreview.swift; sourceTree = SOURCE_ROOT; };
+		F0B7AE031E2BD0C2007610CE /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemCell.xib; path = fauxpasreportconverter/PreviewData/ItemCell.xib; sourceTree = SOURCE_ROOT; };
+		F0B7AE051E2BD0D2007610CE /* LayoutPreviewCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutPreviewCollectionView.swift; path = fauxpasreportconverter/PreviewData/LayoutPreviewCollectionView.swift; sourceTree = SOURCE_ROOT; };
+		F0B7AE071E2BD0E3007610CE /* PreviewCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewCollectionView.swift; path = fauxpasreportconverter/PreviewData/PreviewCollectionView.swift; sourceTree = SOURCE_ROOT; };
+		F0B7AE091E2BD0EB007610CE /* ViewOfItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewOfItemCell.swift; path = fauxpasreportconverter/PreviewData/ViewOfItemCell.swift; sourceTree = SOURCE_ROOT; };
 		F0D4A4711E2A4A98000193DB /* DataSourceOfPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSourceOfPreview.swift; path = fauxpasreportconverter/PreviewData/DataSourceOfPreview.swift; sourceTree = SOURCE_ROOT; };
 		F0E500B11D2CD33700734490 /* LibXlpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibXlpage.swift; path = ExcelSheet/LibXlpage.swift; sourceTree = "<group>"; };
 		F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibxlwriterPage.swift; path = ExcelSheet/LibxlwriterPage.swift; sourceTree = "<group>"; };
@@ -275,11 +279,13 @@
 		F0D4A4731E2A4AA4000193DB /* PreviewData */ = {
 			isa = PBXGroup;
 			children = (
+				F0B7ADFD1E2BCFA1007610CE /* ItemCell.swift */,
 				F0D4A4711E2A4A98000193DB /* DataSourceOfPreview.swift */,
-				F0B7ADF71E2B5ED7007610CE /* ViewOfItemCell.swift */,
-				F0B7ADE71E2B49A4007610CE /* ItemCell.swift */,
-				F0B7ADE81E2B49A4007610CE /* PreviewCollectionView.swift */,
-				F0B7ADE91E2B49A4007610CE /* DelegateOfPreview.swift */,
+				F0B7ADFF1E2BCFAE007610CE /* DelegateOfPreview.swift */,
+				F0B7AE051E2BD0D2007610CE /* LayoutPreviewCollectionView.swift */,
+				F0B7AE071E2BD0E3007610CE /* PreviewCollectionView.swift */,
+				F0B7AE091E2BD0EB007610CE /* ViewOfItemCell.swift */,
+				F0B7AE031E2BD0C2007610CE /* ItemCell.xib */,
 			);
 			name = PreviewData;
 			path = ../fauxpasreportconverter/ReportModel;
@@ -421,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B7AE041E2BD0C2007610CE /* ItemCell.xib in Resources */,
 				F037EFAB1E1F9AAC001768F5 /* fauxPas.json in Resources */,
 				F06B6D8E1D2B896E00451831 /* Assets.xcassets in Resources */,
 				F06B6D911D2B896E00451831 /* Main.storyboard in Resources */,
@@ -590,20 +597,21 @@
 				F037EFAF1E1FFB7C001768F5 /* NSDateExtension.swift in Sources */,
 				F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */,
 				F09FA4DB1E1C318F008D3B19 /* Start.swift in Sources */,
+				F0B7AE001E2BCFAE007610CE /* DelegateOfPreview.swift in Sources */,
+				F0B7AE081E2BD0E3007610CE /* PreviewCollectionView.swift in Sources */,
 				F09FA4CF1E1C318F008D3B19 /* EndClass.swift in Sources */,
-				F0B7ADEC1E2B49A4007610CE /* DelegateOfPreview.swift in Sources */,
-				F0B7ADEA1E2B49A4007610CE /* ItemCell.swift in Sources */,
 				F0E500B61D2CDFC500734490 /* StringToPath.swift in Sources */,
 				F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */,
 				F06B6D8C1D2B896E00451831 /* ViewController.swift in Sources */,
+				F0B7ADFE1E2BCFA1007610CE /* ItemCell.swift in Sources */,
+				F0B7AE0A1E2BD0EB007610CE /* ViewOfItemCell.swift in Sources */,
+				F0B7AE061E2BD0D2007610CE /* LayoutPreviewCollectionView.swift in Sources */,
 				F09FA4CC1E1C318F008D3B19 /* Diagnostics.swift in Sources */,
 				F09FA4D51E1C318F008D3B19 /* Html.swift in Sources */,
-				F0B7ADF81E2B5ED7007610CE /* ViewOfItemCell.swift in Sources */,
 				F0D4A4721E2A4A98000193DB /* DataSourceOfPreview.swift in Sources */,
 				F09FA4D81E1C318F008D3B19 /* ReportModel.swift in Sources */,
 				F06B6D8A1D2B896E00451831 /* AppDelegate.swift in Sources */,
 				F09FA4D21E1C318F008D3B19 /* Extent.swift in Sources */,
-				F0B7ADEB1E2B49A4007610CE /* PreviewCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,22 +9,23 @@
 import Foundation
 
 public class DataSourceOfPreview: NSViewController, NSCollectionViewDataSource {
-
- @objc public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 27
-  }
-
- @objc public func collectionView(_ collectionView: NSCollectionView,
-                             itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-    let item = collectionView.makeItem(withIdentifier: "cell", for: indexPath)
-    guard let colectionViewItem = item as? NSCollectionViewItem else {
-      return item
+let map = [1, 12]
+    @objc public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return map[section]
     }
-    return colectionViewItem
-      }
 
- @objc public func numberOfSections(in collectionView: NSCollectionView) -> Int {
-    return 1
-  }
+    @objc public func collectionView(_ collectionView: NSCollectionView,
+                                     itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier: "ItemCell", for: indexPath)
+        item.textField?.stringValue = "text!!!"
+        guard let colectionViewItem = item as? ItemCell else {
+            return item
+        }
+        return colectionViewItem
+    }
+
+    @objc public func numberOfSections(in collectionView: NSCollectionView) -> Int {
+        return map.count
+    }
 
 }

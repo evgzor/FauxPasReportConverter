@@ -652,7 +652,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Faux Pas Report Converter" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="550" height="346"/>
@@ -706,14 +706,14 @@
                             </button>
                             <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yo-cU-Jdo">
                                 <rect key="frame" x="20" y="126" width="497" height="181"/>
-                                <clipView key="contentView" drawsBackground="NO" id="PvF-53-BAy">
+                                <clipView key="contentView" wantsLayer="YES" drawsBackground="NO" id="PvF-53-BAy">
                                     <rect key="frame" x="1" y="1" width="495" height="179"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView id="oPr-yb-gRk" customClass="PreviewCollectionView" customModule="FauxPasReportConverter" customModuleProvider="target">
+                                        <collectionView wantsLayer="YES" id="oPr-yb-gRk" customClass="PreviewCollectionView" customModule="FauxPasReportConverter" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="495" height="179"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" id="h9U-RH-SDc">
+                                            <collectionViewFlowLayout key="collectionViewLayout" id="h9U-RH-SDc" customClass="LayoutPreviewCollectionView" customModule="FauxPasReportConverter" customModuleProvider="target">
                                                 <size key="itemSize" width="165" height="30"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -769,35 +769,6 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="110" y="843.5"/>
-        </scene>
-        <!--Cell-->
-        <scene sceneID="5AW-Fy-EF0">
-            <objects>
-                <collectionViewItem title="Cell" id="AeR-4U-2MM" customClass="ItemCell" customModule="FauxPasReportConverter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" identifier="cell" wantsLayer="YES" id="Svx-Uo-RT5" customClass="ViewOfItemCell" customModule="FauxPasReportConverter" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="299" height="41"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ucI-Ls-Sh3">
-                                <rect key="frame" x="0.0" y="0.0" width="299" height="41"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Label" drawsBackground="YES" id="ZNF-3o-q38">
-                                    <font key="font" metaFont="system" size="30"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ucI-Ls-Sh3" secondAttribute="trailing" id="Ee0-l7-8yu"/>
-                            <constraint firstItem="ucI-Ls-Sh3" firstAttribute="leading" secondItem="Svx-Uo-RT5" secondAttribute="leading" id="Qll-fI-t7g"/>
-                            <constraint firstAttribute="bottom" secondItem="ucI-Ls-Sh3" secondAttribute="bottom" id="mFp-VJ-8ze"/>
-                            <constraint firstItem="ucI-Ls-Sh3" firstAttribute="top" secondItem="Svx-Uo-RT5" secondAttribute="top" id="uqe-Rv-AtY"/>
-                        </constraints>
-                    </view>
-                </collectionViewItem>
-                <customObject id="HTK-Za-Xyk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-15.5" y="1083.5"/>
         </scene>
     </scenes>
     <resources>

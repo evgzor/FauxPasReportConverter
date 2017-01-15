@@ -20,10 +20,10 @@ class ViewController: NSViewController {
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+        
         }
     }
-  
+
     @IBAction func openFile (_ sender : AnyObject) -> Void {
       let dialog = NSOpenPanel();
       

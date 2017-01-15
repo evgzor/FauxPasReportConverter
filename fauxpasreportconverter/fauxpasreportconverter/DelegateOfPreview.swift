@@ -8,14 +8,13 @@
 
 import Foundation
 
-public class DelegateOfPreview: NSObject, NSCollectionViewDelegate, NSCollectionViewDelegateFlowLayout {
-    let collumsMap = [1, 3]
+public class DelegateOfPreview: NSObject, NSCollectionViewDelegate,
+NSCollectionViewDelegateFlowLayout {
+  
     public func collectionView(_ collectionView: NSCollectionView,
                                layout collectionViewLayout: NSCollectionViewLayout,
                                sizeForItemAt indexPath: IndexPath) -> NSSize {
-        let numberOfColums = collumsMap[indexPath.section]
-        let width =  collectionView.frame.size.width / CGFloat(numberOfColums)
+        let width = collectionView.frame.size.width / 3
         return NSSize(width: width, height: 30)
     }
-
 }

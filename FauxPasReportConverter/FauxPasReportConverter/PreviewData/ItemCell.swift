@@ -7,25 +7,20 @@
 //
 
 import Foundation
+
 class ItemCell: NSCollectionViewItem {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+
     override func awakeFromNib() {
+        super.awakeFromNib()
 
     }
     override func loadView() {
-        //self.view = NSView(frame: NSZeroRect)
-        self.view.wantsLayer = true
-        self.view.layer = CALayer()
-        guard let layer = view.layer else {
-            return
-        }
-        layer.borderWidth = 0.1
-        layer.borderColor = .black
-
+      super.loadView()
     }
 
 }

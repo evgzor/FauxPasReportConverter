@@ -173,7 +173,7 @@ open class Libxlwriter: NSObject {
         //worksheet_write_string(worksheet1, 5, 1, self.reportModel?.fauxPasVersion,  myformat1)
 
         // Write to the second worksheet.
-        worksheet_write_string(worksheet2, 0, 0, "Some text", myformat1)
+        worksheet_write_string(worksheet2, 0, 0, "Issues", myformat1)
       
       /* Write some data for the chart. */
       worksheet_write_number(worksheet1, lxw_row_t(lastRow), 0, 10, nil);
@@ -182,10 +182,15 @@ open class Libxlwriter: NSObject {
       worksheet_write_number(worksheet1, lxw_row_t(lastRow + 3), 0, 20, nil);
       worksheet_write_number(worksheet1, lxw_row_t(lastRow + 4), 0, 10, nil);
       worksheet_write_number(worksheet1, lxw_row_t(lastRow + 5), 0, 50, nil);
+      
+      /* Write some data for the chart. */
+      worksheet_write_string(worksheet1, 7, 1, "Distribution", myformat1)
+      
       /* Create a chart object. */
       let chart = workbook_add_chart(workbook, UInt8(LXW_CHART_LINE.rawValue));
       /* Configure the chart. */
-      let series = chart_add_series(chart, nil, UnsafeMutablePointer(mutating: "\(workSheetName)!$A$\(7):$A$\(10)"))
+      let series = chart_add_series(chart, UnsafeMutablePointer(mutating: "\(workSheetName)!$B$\(8):$B$\(8)"), UnsafeMutablePointer(mutating: "\(workSheetName)!$A$\(7):$A$\(10)"))
+      chart_series_set_name (series, UnsafeMutablePointer(mutating:"Issues"))
 
       /* Insert the chart into the worksheet. */
       worksheet_insert_chart(worksheet1, 10, 0, chart)

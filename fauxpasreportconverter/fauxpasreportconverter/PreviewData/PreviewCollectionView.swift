@@ -8,16 +8,19 @@
 
 import Foundation
 
-public class PreviewCollectionView: NSCollectionView {
+public class PreviewCollectionView: NSCollectionView, NSWindowDelegate {
 
-  fileprivate let dataSourcePreview = DataSourceOfPreview()
-  fileprivate let delegatePreview =  DelegateOfPreview()
-  public required init?(coder: NSCoder) {
-    super.init(coder: coder)
-    self.dataSource = dataSourcePreview
-    self.delegate = delegatePreview
-    
-    
-    self.register( ItemCell.self, forItemWithIdentifier: "cell")
-  }
+    fileprivate let dataSourcePreview = DataSourceOfPreview()
+    fileprivate let delegatePreview =  DelegateOfPreview()
+    public required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.dataSource = dataSourcePreview
+        self.delegate = delegatePreview
+
+        NSApplication.shared().windows.first?.delegate = self
+    }
+
+    public func windowDidResize(_ notification: Notification) {
+        self.collectionViewLayout?.invalidateLayout()
+    }
 }
