@@ -656,7 +656,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="550" height="346"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -681,20 +681,11 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TmP-lP-CnI">
-                                <rect key="frame" x="363" y="71" width="162" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" title="LibXL" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" sound="Blow" inset="2" id="Acz-Og-CPw">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="createExelSheet:" target="XfG-lQ-9wD" id="AIW-F8-g0b"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQN-FV-Fzu">
-                                <rect key="frame" x="34" y="26" width="162" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xQN-FV-Fzu">
+                                <rect key="frame" x="34" y="26" width="156" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="uGR-4i-fve"/>
+                                </constraints>
                                 <buttonCell key="cell" type="square" title="Choose file" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" sound="Blow" inset="2" id="Ksu-NF-daq">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -703,9 +694,8 @@
                                     <action selector="openFile:" target="XfG-lQ-9wD" id="HId-Ba-Yg4"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUG-ga-kCU">
-                                <rect key="frame" x="363" y="14" width="162" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IUG-ga-kCU">
+                                <rect key="frame" x="355" y="36" width="162" height="25"/>
                                 <buttonCell key="cell" type="square" title="libxlwriter" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" sound="Blow" inset="2" id="tMS-ZN-ViX">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -714,16 +704,100 @@
                                     <action selector="createXLSheet:" target="XfG-lQ-9wD" id="Xn8-Xo-PbV"/>
                                 </connections>
                             </button>
+                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yo-cU-Jdo">
+                                <rect key="frame" x="20" y="126" width="497" height="181"/>
+                                <clipView key="contentView" drawsBackground="NO" id="PvF-53-BAy">
+                                    <rect key="frame" x="1" y="1" width="495" height="179"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView id="oPr-yb-gRk" customClass="PreviewCollectionView" customModule="FauxPasReportConverter" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="495" height="179"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" id="h9U-RH-SDc">
+                                                <size key="itemSize" width="165" height="30"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="gLD-0I-4TD">
+                                    <rect key="frame" x="1" y="164" width="489" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="RhU-5K-kE1">
+                                    <rect key="frame" x="461" y="1" width="16" height="152"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TmP-lP-CnI">
+                                <rect key="frame" x="355" y="71" width="162" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="1NS-4x-40V"/>
+                                    <constraint firstAttribute="height" constant="47" id="MID-sR-6HB"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="LibXL" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" sound="Blow" inset="2" id="Acz-Og-CPw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="createExelSheet:" target="XfG-lQ-9wD" id="AIW-F8-g0b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2Yo-cU-Jdo" secondAttribute="trailing" constant="33" id="4M8-bK-1Jp"/>
+                            <constraint firstItem="TmP-lP-CnI" firstAttribute="top" secondItem="2Yo-cU-Jdo" secondAttribute="bottom" constant="8" id="4eq-8r-c4Q"/>
+                            <constraint firstItem="IUG-ga-kCU" firstAttribute="top" secondItem="TmP-lP-CnI" secondAttribute="bottom" constant="10" symbolic="YES" id="5Gz-h2-Bhi"/>
                             <constraint firstItem="nVC-91-UEB" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="6qh-en-0R2"/>
+                            <constraint firstItem="xQN-FV-Fzu" firstAttribute="top" secondItem="2Yo-cU-Jdo" secondAttribute="bottom" constant="50" id="CnQ-KH-ajg"/>
+                            <constraint firstItem="xQN-FV-Fzu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="34" id="Fj7-yi-VsF"/>
+                            <constraint firstAttribute="bottom" secondItem="xQN-FV-Fzu" secondAttribute="bottom" constant="26" id="Y8M-ot-gTq"/>
+                            <constraint firstItem="2Yo-cU-Jdo" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="b2N-0u-ywM"/>
+                            <constraint firstItem="TmP-lP-CnI" firstAttribute="leading" secondItem="IUG-ga-kCU" secondAttribute="leading" id="bfW-P4-qlI"/>
+                            <constraint firstItem="TmP-lP-CnI" firstAttribute="trailing" secondItem="2Yo-cU-Jdo" secondAttribute="trailing" id="fqP-TZ-7tL"/>
+                            <constraint firstItem="2Yo-cU-Jdo" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="g1U-54-tiM"/>
+                            <constraint firstAttribute="bottom" secondItem="TmP-lP-CnI" secondAttribute="bottom" constant="71" id="idE-J2-Zsd"/>
                             <constraint firstAttribute="trailing" secondItem="nVC-91-UEB" secondAttribute="trailing" id="juu-2x-N3l"/>
+                            <constraint firstItem="TmP-lP-CnI" firstAttribute="trailing" secondItem="IUG-ga-kCU" secondAttribute="trailing" id="tFG-yQ-55e"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="reviewCollection" destination="oPr-yb-gRk" id="bGk-5I-Ezu"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="110" y="843.5"/>
+        </scene>
+        <!--Cell-->
+        <scene sceneID="5AW-Fy-EF0">
+            <objects>
+                <collectionViewItem title="Cell" id="AeR-4U-2MM" customClass="ItemCell" customModule="FauxPasReportConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" identifier="cell" wantsLayer="YES" id="Svx-Uo-RT5" customClass="ViewOfItemCell" customModule="FauxPasReportConverter" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="299" height="41"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ucI-Ls-Sh3">
+                                <rect key="frame" x="0.0" y="0.0" width="299" height="41"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Label" drawsBackground="YES" id="ZNF-3o-q38">
+                                    <font key="font" metaFont="system" size="30"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ucI-Ls-Sh3" secondAttribute="trailing" id="Ee0-l7-8yu"/>
+                            <constraint firstItem="ucI-Ls-Sh3" firstAttribute="leading" secondItem="Svx-Uo-RT5" secondAttribute="leading" id="Qll-fI-t7g"/>
+                            <constraint firstAttribute="bottom" secondItem="ucI-Ls-Sh3" secondAttribute="bottom" id="mFp-VJ-8ze"/>
+                            <constraint firstItem="ucI-Ls-Sh3" firstAttribute="top" secondItem="Svx-Uo-RT5" secondAttribute="top" id="uqe-Rv-AtY"/>
+                        </constraints>
+                    </view>
+                </collectionViewItem>
+                <customObject id="HTK-Za-Xyk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15.5" y="1083.5"/>
         </scene>
     </scenes>
     <resources>
