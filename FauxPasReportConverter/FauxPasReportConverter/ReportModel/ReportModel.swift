@@ -38,6 +38,7 @@ public class ReportModel: NSObject, NSCoding, NSCopying {
   var projectName: String?
   var targetBundleVersion: String?
   var diagnostics = [AnyObject]()
+  var headerList: [Dictionary<String, String?>]?
   
   override init() {
     super.init()
@@ -72,6 +73,10 @@ public class ReportModel: NSObject, NSCoding, NSCopying {
         parsedDiagnostics.append(Diagnostics.modelObject(withDictionary: receivedDiagnostics))
       }
       self.diagnostics = (arrayLiteral: parsedDiagnostics) as [AnyObject]
+    
+    headerList = [["Build Configuration:": buildConfigurationName],
+                                                             ["Target Build Name:": targetName],
+                                                             ["Build Version:": targetBundleVersion], ["Faux Pas Version:": fauxPasVersion]]
   }
 
   func dictionaryRepresentation() -> [AnyHashable: Any] {

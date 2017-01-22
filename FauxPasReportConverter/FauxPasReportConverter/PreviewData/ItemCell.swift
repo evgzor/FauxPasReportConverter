@@ -10,17 +10,19 @@ import Foundation
 
 class ItemCell: NSCollectionViewItem {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-    }
+  }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
+  override func awakeFromNib() {
+    super.awakeFromNib()
 
-    }
-    override func loadView() {
-      super.loadView()
-    }
+  }
+
+  override func loadView() {
+
+    super.loadView()
+  }
 
 }

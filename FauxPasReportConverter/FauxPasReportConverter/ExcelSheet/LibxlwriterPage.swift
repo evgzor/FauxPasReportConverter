@@ -59,9 +59,9 @@ open class Libxlwriter: NSObject {
 
     public func createHeader(worksheet: UnsafeMutablePointer<lxw_worksheet>?,
                              format: UnsafeMutablePointer<lxw_format>?, startRow: UInt) -> Int {
-        let headerList: [Dictionary<String, String?>] = [["Build Configuration:": self.reportModel?.buildConfigurationName],
-                                                         ["Target Build Name:": self.reportModel?.targetName],
-                                                         ["Build Version:": self.reportModel?.targetBundleVersion], ["Faux Pas Version:": self.reportModel?.fauxPasVersion]]
+      guard let headerList: [Dictionary<String, String?>] = self.reportModel?.headerList else {
+        return 0
+      }
         guard self.reportModel != nil, worksheet != nil else {
             return 0
         }

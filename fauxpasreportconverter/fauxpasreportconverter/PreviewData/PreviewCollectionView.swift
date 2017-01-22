@@ -10,17 +10,26 @@ import Foundation
 
 public class PreviewCollectionView: NSCollectionView, NSWindowDelegate {
 
-    fileprivate let dataSourcePreview = DataSourceOfPreview()
-    fileprivate let delegatePreview =  DelegateOfPreview()
-    public required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        self.dataSource = dataSourcePreview
-        self.delegate = delegatePreview
+  fileprivate let dataSourcePreview = DataSourceOfPreview()
+  fileprivate let delegatePreview = DelegateOfPreview()
+  public required init?(coder: NSCoder) {
+    super.init(coder: coder)
+    self.dataSource = dataSourcePreview
+    self.delegate = delegatePreview
 
-        NSApplication.shared().windows.first?.delegate = self
-    }
+    NSApplication.shared().windows.first?.delegate = self
+  }
 
-    public func windowDidResize(_ notification: Notification) {
-        self.collectionViewLayout?.invalidateLayout()
+  public func setData(dataCollection: ReportModel?) -> Void {
+
+    guard let dataCollection = dataCollection else {
+      return
     }
+    dataSourcePreview.dataSource = dataCollection
+  }
+
+  public func windowDidResize(_ notification: Notification) {
+    self.collectionViewLayout?.invalidateLayout()
+  }
+
 }
