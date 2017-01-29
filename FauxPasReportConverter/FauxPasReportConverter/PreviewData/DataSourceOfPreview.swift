@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import Charts
 
 public class DataSourceOfPreview: NSViewController, NSCollectionViewDataSource {
-  let map = [1, 12]
+  let map = [1, 12, 1]
   public var dataSource: ReportModel?
 
   @objc public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -19,15 +20,28 @@ public class DataSourceOfPreview: NSViewController, NSCollectionViewDataSource {
 
   @objc public func collectionView(_ collectionView: NSCollectionView,
                                    itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-    let item = collectionView.makeItem(withIdentifier: "ItemCell", for: indexPath)
-    guard let _ = self.dataSource,
-      let colectionViewItem = item as? ItemCell,
-      let textForCell = retriveText(by: indexPath) else {
-      return item
+    var item: NSCollectionViewItem {
+      switch indexPath.section {
+      case let section where section < 2:
+        return collectionView.makeItem(withIdentifier: "ItemCell", for: indexPath)
+      case let section where section == 2:
+        return collectionView.makeItem(withIdentifier: "ChartCell", for: indexPath)
+      default:
+        return collectionView.makeItem(withIdentifier: "ItemCell", for: indexPath)
+      }
     }
-    item.textField?.stringValue = textForCell
 
-    return colectionViewItem
+    if let item = item as? ItemCell,
+      let textForCell = retriveText(by: indexPath) {
+      item.textField?.stringValue = textForCell
+    }
+
+    if let item = item as? ChartCell,
+      let chartView = item.chartView {
+      chartView.noDataText = "You need to provide data for the chart."
+    }
+
+    return item
   }
 
   @objc public func numberOfSections(in collectionView: NSCollectionView) -> Int {

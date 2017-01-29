@@ -50,6 +50,12 @@
 		F0B7AE061E2BD0D2007610CE /* LayoutPreviewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7AE051E2BD0D2007610CE /* LayoutPreviewCollectionView.swift */; };
 		F0B7AE081E2BD0E3007610CE /* PreviewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7AE071E2BD0E3007610CE /* PreviewCollectionView.swift */; };
 		F0B7AE0A1E2BD0EB007610CE /* ViewOfItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7AE091E2BD0EB007610CE /* ViewOfItemCell.swift */; };
+		F0CEC8961E3E0DB000935DD5 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CEC8941E3E0B4000935DD5 /* Charts.framework */; };
+		F0CEC8971E3E0DB100935DD5 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CEC8941E3E0B4000935DD5 /* Charts.framework */; };
+		F0CEC8981E3E0E0600935DD5 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CEC8941E3E0B4000935DD5 /* Charts.framework */; };
+		F0CEC8991E3E0E0600935DD5 /* Charts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F0CEC8941E3E0B4000935DD5 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F0CEC89B1E3E17BE00935DD5 /* ChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CEC89A1E3E17BE00935DD5 /* ChartCell.xib */; };
+		F0CEC89D1E3E1A7800935DD5 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CEC89C1E3E1A7800935DD5 /* ChartCell.swift */; };
 		F0D4A4721E2A4A98000193DB /* DataSourceOfPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D4A4711E2A4A98000193DB /* DataSourceOfPreview.swift */; };
 		F0E500B21D2CD33700734490 /* LibXlpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B11D2CD33700734490 /* LibXlpage.swift */; };
 		F0E500B41D2CD7F000734490 /* LibxlwriterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */; };
@@ -81,6 +87,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F06B6DBA1D2B902800451831 /* LibXL.framework in CopyFiles */,
+				F0CEC8991E3E0E0600935DD5 /* Charts.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +133,9 @@
 		F0B7AE051E2BD0D2007610CE /* LayoutPreviewCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutPreviewCollectionView.swift; path = fauxpasreportconverter/PreviewData/LayoutPreviewCollectionView.swift; sourceTree = SOURCE_ROOT; };
 		F0B7AE071E2BD0E3007610CE /* PreviewCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewCollectionView.swift; path = fauxpasreportconverter/PreviewData/PreviewCollectionView.swift; sourceTree = SOURCE_ROOT; };
 		F0B7AE091E2BD0EB007610CE /* ViewOfItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewOfItemCell.swift; path = fauxpasreportconverter/PreviewData/ViewOfItemCell.swift; sourceTree = SOURCE_ROOT; };
+		F0CEC8941E3E0B4000935DD5 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
+		F0CEC89A1E3E17BE00935DD5 /* ChartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartCell.xib; sourceTree = "<group>"; };
+		F0CEC89C1E3E1A7800935DD5 /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
 		F0D4A4711E2A4A98000193DB /* DataSourceOfPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSourceOfPreview.swift; path = fauxpasreportconverter/PreviewData/DataSourceOfPreview.swift; sourceTree = SOURCE_ROOT; };
 		F0E500B11D2CD33700734490 /* LibXlpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibXlpage.swift; path = ExcelSheet/LibXlpage.swift; sourceTree = "<group>"; };
 		F0E500B31D2CD7F000734490 /* LibxlwriterPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibxlwriterPage.swift; path = ExcelSheet/LibxlwriterPage.swift; sourceTree = "<group>"; };
@@ -137,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CEC8981E3E0E0600935DD5 /* Charts.framework in Frameworks */,
 				F06B6DB51D2B8F7C00451831 /* LibXL.framework in Frameworks */,
 				49BD65D1499495B08D0E7050 /* libPods-FauxPasReportConverter.a in Frameworks */,
 			);
@@ -146,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CEC8961E3E0DB000935DD5 /* Charts.framework in Frameworks */,
 				F06B6DB61D2B8F7C00451831 /* LibXL.framework in Frameworks */,
 				BEF923FB0AC87077B866223B /* libPods-FauxPasReportConverterTests.a in Frameworks */,
 			);
@@ -155,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CEC8971E3E0DB100935DD5 /* Charts.framework in Frameworks */,
 				F06B6DB71D2B8F7C00451831 /* LibXL.framework in Frameworks */,
 				DEDA0A4BA6AA8443DEB5CD30 /* libPods-FauxPasReportConverterUITests.a in Frameworks */,
 			);
@@ -280,12 +293,14 @@
 			isa = PBXGroup;
 			children = (
 				F0B7ADFD1E2BCFA1007610CE /* ItemCell.swift */,
+				F0CEC89C1E3E1A7800935DD5 /* ChartCell.swift */,
 				F0D4A4711E2A4A98000193DB /* DataSourceOfPreview.swift */,
 				F0B7ADFF1E2BCFAE007610CE /* DelegateOfPreview.swift */,
 				F0B7AE051E2BD0D2007610CE /* LayoutPreviewCollectionView.swift */,
 				F0B7AE071E2BD0E3007610CE /* PreviewCollectionView.swift */,
 				F0B7AE091E2BD0EB007610CE /* ViewOfItemCell.swift */,
 				F0B7AE031E2BD0C2007610CE /* ItemCell.xib */,
+				F0CEC89A1E3E17BE00935DD5 /* ChartCell.xib */,
 			);
 			name = PreviewData;
 			path = ../fauxpasreportconverter/ReportModel;
@@ -303,6 +318,7 @@
 		FFFF604EA9540E67FE44C11B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0CEC8941E3E0B4000935DD5 /* Charts.framework */,
 				AB5F36E5F818F99DB16C0F19 /* libPods-FauxPasReportConverter.a */,
 				82EB30E2D75A24486DF32B98 /* libPods-FauxPasReportConverterTests.a */,
 				B03A1A2C3544BF084DFEE79B /* libPods-FauxPasReportConverterUITests.a */,
@@ -427,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CEC89B1E3E17BE00935DD5 /* ChartCell.xib in Resources */,
 				F0B7AE041E2BD0C2007610CE /* ItemCell.xib in Resources */,
 				F037EFAB1E1F9AAC001768F5 /* fauxPas.json in Resources */,
 				F06B6D8E1D2B896E00451831 /* Assets.xcassets in Resources */,
@@ -608,6 +625,7 @@
 				F0B7AE061E2BD0D2007610CE /* LayoutPreviewCollectionView.swift in Sources */,
 				F09FA4CC1E1C318F008D3B19 /* Diagnostics.swift in Sources */,
 				F09FA4D51E1C318F008D3B19 /* Html.swift in Sources */,
+				F0CEC89D1E3E1A7800935DD5 /* ChartCell.swift in Sources */,
 				F0D4A4721E2A4A98000193DB /* DataSourceOfPreview.swift in Sources */,
 				F09FA4D81E1C318F008D3B19 /* ReportModel.swift in Sources */,
 				F06B6D8A1D2B896E00451831 /* AppDelegate.swift in Sources */,
@@ -769,6 +787,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -802,6 +821,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -833,6 +853,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FauxPasReportConverterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -855,6 +876,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FauxPasReportConverterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -875,6 +897,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FauxPasReportConverterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -896,6 +919,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FauxPasReportConverter/FrameWorks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = FauxPasReportConverterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";

@@ -13,13 +13,15 @@ class LayoutPreviewCollectionView: NSCollectionViewFlowLayout {
   override func prepare() {
     super.prepare()
   }
-    override func shouldInvalidateLayout(forBoundsChange newBounds: NSRect) -> Bool {
-        return true
-    }
 
-    override func invalidateLayout() {
-        super.invalidateLayout()
+  override func shouldInvalidateLayout(forBoundsChange newBounds: NSRect) -> Bool {
 
-    }
+    return true
+  }
+
+  override func invalidateLayout() {
+    super.invalidateLayout()
+
+  }
 
 }
