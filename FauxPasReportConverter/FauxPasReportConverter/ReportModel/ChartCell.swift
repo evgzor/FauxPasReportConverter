@@ -11,11 +11,9 @@ import Charts
 
 class ChartCell: NSCollectionViewItem {
 
-  @IBOutlet weak var chartView: BarChartView!
-
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
   }
 
   override func awakeFromNib() {

@@ -37,7 +37,7 @@ public class DataSourceOfPreview: NSViewController, NSCollectionViewDataSource {
     }
 
     if let item = item as? ChartCell,
-      let chartView = item.chartView {
+      let chartView = item.view as? BarChartView {
       chartView.noDataText = "You need to provide data for the chart."
     }
 
