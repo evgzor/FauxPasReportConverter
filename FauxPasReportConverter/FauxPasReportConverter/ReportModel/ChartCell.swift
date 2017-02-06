@@ -15,7 +15,14 @@ class ChartCell: NSCollectionViewItem {
     super.viewDidLoad()
 
   }
-
+  override func prepareForReuse() {
+    super.prepareForReuse()
+    guard let chartView = self.view as? BarChartView else {
+      return
+    }
+    chartView.clear()
+    chartView.noDataText = ""
+  }
   override func awakeFromNib() {
     super.awakeFromNib()
 

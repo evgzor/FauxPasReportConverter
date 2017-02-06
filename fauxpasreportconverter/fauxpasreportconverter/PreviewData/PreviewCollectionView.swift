@@ -20,7 +20,7 @@ public class PreviewCollectionView: NSCollectionView, NSWindowDelegate {
     NSApplication.shared().windows.first?.delegate = self
   }
 
-  public func setData(dataCollection: ReportModel?) -> Void {
+  public func setData(dataCollection: ReportModel?) {
 
     guard let dataCollection = dataCollection else {
       return

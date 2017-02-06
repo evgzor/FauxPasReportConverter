@@ -20,7 +20,8 @@ public class DataSourceOfPreview: NSViewController, NSCollectionViewDataSource {
 
   @objc public func collectionView(_ collectionView: NSCollectionView,
                                    itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-    var item: NSCollectionViewItem {
+    
+    var collectionViewItem: NSCollectionViewItem {
       switch indexPath.section {
       case let section where section < 2:
         return collectionView.makeItem(withIdentifier: "ItemCell", for: indexPath)
@@ -31,17 +32,39 @@ public class DataSourceOfPreview: NSViewController, NSCollectionViewDataSource {
       }
     }
 
-    if let item = item as? ItemCell,
+    if let item = collectionViewItem as? ItemCell,
       let textForCell = retriveText(by: indexPath) {
       item.textField?.stringValue = textForCell
+      return item
     }
 
-    if let item = item as? ChartCell,
+    if let item = collectionViewItem as? ChartCell,
       let chartView = item.view as? BarChartView {
-      chartView.noDataText = "You need to provide data for the chart."
+      let values: [Double] = [8, 104, 81, 93, 52, 44, 97, 101, 75, 28,
+                              76, 25, 20, 13, 52, 44, 57, 23, 45, 91,
+                              99, 14, 84, 48, 40, 71, 106, 41, 45, 61]
+
+      var entries: [ChartDataEntry] = Array()
+
+      for (i, value) in values.enumerated() {
+        entries.append(BarChartDataEntry(x: Double(i), y: value))
+      }
+
+      let dataSet = BarChartDataSet(values: entries, label: "")
+      let data = BarChartData(dataSet: dataSet)
+      data.barWidth = 0.85
+      chartView.legend.verticalAlignment = .bottom
+      chartView.legend.horizontalAlignment = .right
+      chartView.chartDescription?.text = "Bug Distribution"
+      //chartView.chartDescription?.textAlign = .center
+      chartView.leftAxis.axisMinimum = 0.0
+      chartView.rightAxis.axisMinimum = 0.0
+      chartView.data = data
+
+      return item
     }
 
-    return item
+    return collectionViewItem
   }
 
   @objc public func numberOfSections(in collectionView: NSCollectionView) -> Int {

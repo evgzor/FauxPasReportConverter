@@ -15,6 +15,10 @@ class ItemCell: NSCollectionViewItem {
 
   }
 
+  override func prepareForReuse() {
+    self.textField?.stringValue = ""
+  }
+
   override func awakeFromNib() {
     super.awakeFromNib()
 
